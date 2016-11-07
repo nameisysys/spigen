@@ -1395,15 +1395,15 @@
             var bigSectionsDestination = options.bigSectionsDestination;
 
             //is the destination element bigger than the viewport?
-            if(element.outerHeight() > windowsHeight){
+            if(element.outerHeight() > windowsHeight && options.autoScrolling){
                 //scrolling up? 
                 if(!isScrollingDown && !bigSectionsDestination || bigSectionsDestination === 'bottom' ){
                     position = sectionBottom;
                 }
             }
-
+            
             //sections equal or smaller than the viewport height && scrolling down? ||  is resizing and its in the last section
-            else if(isScrollingDown || (isResizing && element.is(':last-child')) ){
+            else if(isScrollingDown && options.autoScrolling || (isResizing && element.is(':last-child')) ){
                 //The bottom of the destination will be at the bottom of the viewport
                 position = sectionBottom;
             }
