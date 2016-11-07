@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>PICKIT-Portable Photo Printer</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+<link rel="stylesheet" type="text/css" href="css/slick.css" />
+<link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#pickit-page").fullpage({
+            menu: "#gnb",
+            anchors: ['Pickit', 'Feature', '#', 'Comparison', 'Review', 'Spec'],
+            autoScrolling: false,
+            slidesNavigation: true,
+            fitToSection: false
+        });
+        $(".phone").slick({
+        variableWidth: true,
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true
+      });
+    });
+</script>
+</head>
+<body class="fp-enabled">
+    <!--웹폰트(gnb-myriadPro,gotham-->
+    <header>
+        <section class="box-width">
+            <img src="images/logo.png" alt="Pickit">
+            <nav>
+                <ul id="#gnb">
+                    <li><a href="#Pickit">Pickit</a></li>
+                    <li><a href="#Feature">Feature</a></li>
+                    <li><a href="#Comparison">Comparison</a></li>
+                    <li><a href="#Review">Review</a></li>
+                    <li><a href="#Spec">Spec</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <div id="pickit-page">
+        <div class="section" id="section0">
+            <section class="box-width">
+                <div class="float-text">
+                    <h1>MY OWN<br>PHOTO STUDIO</h1>
+                    <h2>Portable Photo Printer PICKIT</h2>
+                    <p>Pickit portable photo printer helps users<br>
+                    to print the most vividly colored photos<br>
+                    from your smartphones in seconds</p>
+                    <button type="button" class="buy-btn">Buy Now</button>
+                </div>
+                <div id="myVideo">
+                    <iframe  src="https://www.youtube.com/embed/PmYqo0xJW1k?wmode=transparent" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </section>
+        </div>
+        <div class="section" id="section1">
+            <section class="box-width">
+                <h3>
+                    <span>Pickit - It’s real</span><br>
+                    Clear and Brilliant Color
+                </h3>
+                <p>Pickit mobile printer guarantees<br>
+                the best photo printing quality of Ink Free Technology.<br>
+                Brighter and Richer Color Reproduction brings<br>
+                great visual experiences.
+                </p>
+                <button type="button" class="buy-btn">Buy Now</button>
+            </section>
+        </div>
+        <div class="section" id="section2">
+            <section class="box-width">
+                <h3>
+                    <span>Pickit, It's Easy</span><br>
+                    Easy to Refill
+                </h3>
+                <p>Integrated All-in-One Cartridge make you free from<br>
+                worries to replace photo paper and ink ribbon.<br>
+                Also, if you use sticker cartridges, your photos<br>
+                become instant stickers.
+                </p>
+                <ul>
+                    <li><img src="images/section2-sub1.jpg" alt="Photo paper"><br>PHOTO<br>PAPER</li>
+                    <li><img src="images/section2-sub2.jpg" alt="Sticky-backed paper"><br>STICKY-BACKED<br>PAPER</li>
+                </ul>
+                <button type="button" class="buy-btn">Buy Now</button>
+            </section>
+        </div>
+        <div class="section" id="section3">
+            <section class="box-width">
+                <section class="phone slider">
+                    <div>
+                        <img src="images/section3-phone.png">
+                    </div>
+                    <div>
+                        <img src="images/section3-phone.png">
+                    </div>
+                    <div>
+                        <img src="images/section3-phone.png">
+                    </div>
+                </section>
+                <div>
+                    <h3>
+                        <span>Pickit App, It's Fun</span><br>
+                        Photo Editing &amp; Decoration
+                    </h3>
+                    <p>Integrated All-in-One Cartridge make you free from<br>
+                    worries to replace photo paper and ink ribbon.<br>
+                    Also, if you use sticker cartridges, your photos<br>
+                    become instant stickers.
+                    </p>
+                    <ul>
+                        <li><img src="images/section3-sub1.png" alt="Collage icon"><br>Collage</li>
+                        <li><img src="images/section3-sub2.png" alt="Fillter icon"><br>Fillter</li>
+                        <li><img src="images/section3-sub3.png" alt="Adjust icon"><br>Adjust</li>
+                        <li><img src="images/section3-sub4.png" alt="Decoration icon"><br>Decoration</li>
+                    </ul>
+                    <div id="btn-wrap">
+                        <button type="button" class="buy-btn">App store</button>
+                        <button type="button" class="buy-btn">Google Play</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
