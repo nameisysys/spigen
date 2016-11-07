@@ -75,7 +75,7 @@ header section > nav ul li a { font-family: 'Catamaran', sans-serif; text-decora
 .float-text h2 { font-size:1.591rem; font-weight:300; margin-bottom:0.682rem; }
 .float-text p { font-size:1rem; font-weight:100; margin-bottom:1.5rem; }
 
-/*page1,2 - feature*/
+/*page1,2,3 - feature*/
 #section1, #section2 { background-position:center; background-repeat:no-repeat; }
 
 #section1 section { padding:0 83px; }
@@ -114,8 +114,12 @@ header section > nav ul li a { font-family: 'Catamaran', sans-serif; text-decora
 #section3 button.buy-btn:hover { background:transparent; }
 #section3 div#btn-wrap { clear:both; float:right; display:block; font-size:0; margin-top:18px; }
 
-/*page3 - comparison*/
 #section3 section { position:relative; }
 /*#section3 section div#text-wrap { position:absolute; z-index:1; top:0; right:45px; }*/
 #section3 .slider { position:absolute; top:-50%; left:40px; z-index:0; outline:none; }
 #section3 .slick-slider { width:501px; }
+
+
+/*page4 - comparison*/
+#section4 { background:#2d282b; text-align:center; }
+#section4 h3 { color:#fff; font-size:2.81rem; font-weight:bold; text-transform:uppercase; }
