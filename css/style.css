@@ -160,8 +160,9 @@ header section > nav ul li a { font-family: 'Catamaran', sans-serif; text-decora
 #section5 h3 { font-size:2.81rem; color:#000; font-weight:bold; text-transform:uppercase; margin-top:149px; }
 #section5 h4 { font-size:1.81rem; color:#000; font-weight:100; text-transform:uppercase; }
 #section5 iframe { width:1052px; margin:65px auto 82px auto; display:block; }
-#section5 .buy-btn { background-color:#fff; color:#000; border-color:#fff; font-weight:300; margin-bottom:73px; }
+#section5 .buy-btn { background-color:#fff; color:#000; border-color:#fff; font-weight:300; margin-bottom:53px; }
 #section5 .buy-btn:hover { background-color:transparent; border-color:#000; }
+.fb-comments { display:block; width:1052px; }
 
 /*page6 - spec*/
 #section6 { background-repeat:no-repeat; background-position:center; background-image:url("../images/section6.jpg"); text-align:left; }
