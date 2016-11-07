@@ -10,27 +10,75 @@
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.fullPage.js"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-86756515-1', 'auto');
+    ga('send', 'pageview');
+</script>
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '607233349484734',
+          xfbml      : true,
+          version    : 'v2.8'
+        });
+        };
+
+        (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
 <script type="text/javascript">
     $(document).ready(function() {
         $("#pickit-page").fullpage({
             menu: "#gnb",
-            anchors: ['Pickit', 'Feature', '#', '#', 'Comparison', 'Review', 'Spec'],
+            anchors: ['Pickit', 'ItsReal', 'ItsEasy', 'ItsFun', 'Comparison', 'Review', 'Spec'],
             autoScrolling: false,
             slidesNavigation: true,
             fitToSection: false
         });
         $(".phone").slick({
-        variableWidth: true,
-        dots: true,
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true
-      });
+            variableWidth: true,
+            dots: true,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1
+        });
+        $(".comparison").slick({
+            variableWidth: true,
+            dots: false,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            mobileFirst: true
+        });
+        $("#top-btn").on("click",function(){
+            $("html,body").stop().animate({scrollTop:"0"});
+        });
+    });
+    $(window).scroll(function () {
+        var height = $(document).scrollTop();
+        var target = 300;
+
+        if(height > target) {
+          $("#top-btn").addClass("show");
+        }
+        else if (height < target) {
+          $("#top-btn").removeClass("show");
+        }
     });
 </script>
 </head>
 <body class="fp-enabled">
+    <aside id="top-btn">TOP</aside>
     <!--웹폰트(gnb-myriadPro,gotham-->
     <header>
         <section class="box-width">
@@ -38,7 +86,7 @@
             <nav>
                 <ul id="#gnb">
                     <li><a href="#Pickit">Pickit</a></li>
-                    <li><a href="#Feature">Feature</a></li>
+                    <li><a href="#ItsReal">Feature</a></li>
                     <li><a href="#Comparison">Comparison</a></li>
                     <li><a href="#Review">Review</a></li>
                     <li><a href="#Spec">Spec</a></li>
@@ -130,12 +178,101 @@
                 </div>
             </section>
         </div>
-        <div class="section" id="section4">
+        <div class="section fp-auto-height" id="section4">
             <section class="box-width">
-                <h3>Why must have pickit?</h3>
-                <h4>Comprtitor <span>VS</span></h4>
+                <div>
+                    <h3>Why must have pickit?</h3>
+                    <h4><span id="font-com">Competitor</span> <span>vs</span> <span id="font-pic">Pickit</span></h4>
+                    <section class="comparison slider">
+                    <div>
+                        <img src="images/section4-slide1.png">
+                        <ul id="slide1-group">
+                            <li>Pickit</li>
+                            <li id="slide1-item2">Monitor</li>
+                            <li>Leading Competitor</li>
+                        </ul>
+                        <h5>Photo Quality</h5>
+                        <p>Ink Free Technology (Dye Sublimation) has much wider color reproduction range<br>
+                        and makes photo quality more vivid, clear and sharp.</p>
+                    </div>
+                    <div>
+                        <ul id="slide2-group">
+                            <li>Pickit</li>
+                            <li>Monitor</li>
+                        </ul>
+                        <img src="images/section4-slide2.png">
+                        <h5 id="dura">Durability</h5>
+                        <p>Laminating layer will keep your memories forever by waterproof and fingerprint proof.</p>
+                    </div>
+                    <div>
+                        <img src="images/section4-slide3.png">
+                        <ul id="slide3-group">
+                            <li>Pickit</li>
+                            <li>Leading Competitor</li>
+                        </ul>
+                        <h5 id="tras">Trasmission Speed</h5>
+                        <p>Faster and easier connection by NFC and WiFi</p>
+                    </div>
+                </section>
+                    <button type="button" class="buy-btn">Buy Now</button>
+                </div>
+            </section>
+        </div>
+        <div class="section" id="section5">
+            <section class="box-width">
+                <h3>Review</h3>
+                <h4>Our customers love pickit</h3>
+                <iframe  src="https://www.youtube.com/embed/RZZK49uy8oM?rel=0&wmode=transparent" width="1052" height="591" frameborder="0" allowfullscreen></iframe>
+                <button type="button" class="buy-btn">Buy Now</button>
+                <div class="fb-comments" data-href=" http://pickit.goselly.com" data-numposts="5" data-width="1052"></div><!-- 너비 조정이 필요할 경우 data-width="WIDTH" 추가하시면 됩니다. -->
+            </section>
+        </div>
+        <div class="section" id="section6">
+            <section class="box-width">
+                <h3>Specification</h3>
+                <table>
+                    <tr>
+                        <th>photo size</th>
+                        <td>2.1” X 3.4” inch</td>
+                    </tr>
+                    <tr>
+                        <th>Smartphone OS</th>
+                        <td>Android ver. 4.0 or above<br>iOS ver 5.0 above</td>
+                    </tr>
+                    <tr>
+                        <th>Refill Kit Capacity</th>
+                        <td>10 photos / Refill Kit</td>
+                    </tr>
+                    <tr>
+                        <th>Time to Charge</th>
+                        <td>1.5 Hour</td>
+                    </tr>
+                    <tr>
+                        <th>Connectivity</th>
+                        <td>WiFi (IEEE 802.111 b/g/n) &amp; WiFi Direct</td>
+                    </tr>
+                    <tr>
+                        <th>Battery Capacity</th>
+                        <td>620mAh (Print 20 photos of test image)</td>
+                    </tr>
+                    <tr>
+                        <th>Size</th>
+                        <td>7.2 x 4 x 2.2 inches</td>
+                    </tr>
+                    <tr>
+                        <th>Weight</th>
+                        <td>8.8 ounces</td>
+                    </tr>
+                    <tr>
+                        <th>Components</th>
+                        <td>1 Pickit Photo Printer, 1 USB Charge Cable1<br>
+                            Refill Kit (8 sheet)</td>
+                    </tr>
+                </table>
+                <button type="button" class="buy-btn">Buy Now</button>
             </section>
         </div>
     </div>
+    <footer>Copyrightⓒ GoSelly All Rights Reserved. | For questions, please email us at amzmaster@goselly.com</footer>
 </body>
 </html>

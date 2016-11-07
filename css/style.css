@@ -33,7 +33,13 @@ button.buy-btn { font-size:0.909rem; font-weight:100; width:160px; padding:10px;
 -moz-border-radius: 22px 22px 22px 22px;
 -webkit-border-radius: 22px 22px 22px 22px;
 border: 1px solid #fff; background:transparent; color:#fff; font-family: 'Raleway', sans-serif; cursor:pointer; }
-button.buy-btn:hover { background:#fff; color:#333; font-weight:300; transition:all 150ms ease-in-out; -webkit-transition:all 150ms ease-in-out; -moz-transition:all 150ms ease-in-out; -o-transition:all 150ms ease-in-out; }
+button.buy-btn:hover { background:#efeeee; color:#333; font-weight:300; transition:all 150ms ease-in-out; -webkit-transition:all 150ms ease-in-out; -moz-transition:all 150ms ease-in-out; -o-transition:all 150ms ease-in-out; }
+
+#top-btn { display:block; cursor:pointer; position:fixed; width:68px; height:68px;
+border-radius: 34px;
+-moz-border-radius: 34px;
+-webkit-border-radius: 34px; font-size:0.72rem; background:#fff; color:#6A6460; font-weight:bold; text-align:center; line-height:68px; bottom:-10%; right:1%; z-index:99; text-decoration:none; transition:all 150ms ease-in-out; -webkit-transition:all 150ms ease-in-out; -moz-transition:all 150ms ease-in-out; -o-transition:all 150ms ease-in-out; }
+#top-btn.show { bottom:1%; transition:all 150ms ease-in-out; -webkit-transition:all 150ms ease-in-out; -moz-transition:all 150ms ease-in-out; -o-transition:all 150ms ease-in-out; }
 
 /*header*/
 header { width:100%; background-color:#efeeee; position:fixed; top:0; left:0; right:0; z-index:99999; }
@@ -118,8 +124,54 @@ header section > nav ul li a { font-family: 'Catamaran', sans-serif; text-decora
 /*#section3 section div#text-wrap { position:absolute; z-index:1; top:0; right:45px; }*/
 #section3 .slider { position:absolute; top:-50%; left:40px; z-index:0; outline:none; }
 #section3 .slick-slider { width:501px; }
+#section3 .slick-prev { left: 0px; }
+#section3 .slick-next { right: 0px; }
 
 
 /*page4 - comparison*/
 #section4 { background:#2d282b; text-align:center; }
-#section4 h3 { color:#fff; font-size:2.81rem; font-weight:bold; text-transform:uppercase; }
+#section4 .fp-tableCell { display:block; }
+#section4 h3 { color:#c9d1d9; font-size:2.81rem; font-weight:bold; text-transform:uppercase; margin:149px 0 10px 0; }
+#section4 h4 { color:#fff; font-weight:bold; text-transform:uppercase; font-size:1.81rem; }
+#section4 h4 span#font-com { font-size:1.45rem; font-weight:100; }
+#section4 h4 span#font-pic { font-weight:100; vertical-align:middle; }
+#section4 .slick-slider { width:998px; margin:106px auto 0 auto; text-align:center; }
+#section4 .slick-prev { left:-61px; }
+#section4 .slick-next { right:-61px; }
+#section4 #slide1-group { margin:10px 0 75px 68px; }
+#section4 #slide1-group li { float:left; width:263px; margin-right:60px; font-size:0.9rem; font-weight:100; color:#fff; }
+#section4 #slide1-group li#slide1-item2 { width:230px; margin-right:55px; }
+#section4 #slide2-group { margin:0 0 5px 56px; }
+#section4 #slide2-group li { float:left; width:397px; margin-right:80px; font-size:0.9rem; font-weight:100; color:#fff; }
+#section4 #slide3-group { width:100%; }
+#section4 #slide3-group li { float:left; width:50%; font-size:0.9rem; font-weight:100; color:#fff; text-align:left; padding-left:160px; }
+#section4 #slide3-group li+li { padding-left:55px; }
+
+#section4 h5 { color:#fff; font-weight:bold; font-size:2.5rem; }
+#section4 h5#dura,
+#section4 h5#tras { margin-top:65px; }
+#section4 p { color:#fff; font-weight:100; font-size:0.9rem; }
+
+#section4 .buy-btn { background-color:#4c4c4c; color:#fff; border-color:#4c4c4c; margin:25px 0 122px 0; }
+#section4 .buy-btn:hover { background-color:transparent; color:#fff; border-color:#fff; font-weight:100; }
+
+/*page5 - review*/
+#section5 { background-color:#efcbce; text-align:center; }
+#section5 h3 { font-size:2.81rem; color:#000; font-weight:bold; text-transform:uppercase; margin-top:149px; }
+#section5 h4 { font-size:1.81rem; color:#000; font-weight:100; text-transform:uppercase; }
+#section5 iframe { width:1052px; margin:65px auto 82px auto; display:block; }
+#section5 .buy-btn { background-color:#fff; color:#000; border-color:#fff; font-weight:300; margin-bottom:73px; }
+#section5 .buy-btn:hover { background-color:transparent; border-color:#000; }
+
+/*page6 - spec*/
+#section6 { background-repeat:no-repeat; background-position:center; background-image:url("../images/section6.jpg"); text-align:left; }
+#section6 section.box-width { padding:0 57px; }
+#section6 h3 { font-size:2.61rem; color:#000; font-weight:bold; text-transform:uppercase; margin-bottom:68px; }
+#section6 table { border-spacing:0; border-collapse:collapse; }
+#section6 table tr td,
+#section6 table tr th { padding:10px 34px 10px 0; font-size:0.9rem; }
+#section6 button.buy-btn { float:right; background-color:#efcbce; border-color:#efcbce; color:#000; font-weight:300; margin-top:120px; }
+#section6 button.buy-btn:hover { background-color:transparent; color:#000; border-color:#000; }
+
+/*footer*/
+footer { text-align:center; width:100%; font-size:0.9rem; font-weight:300; color:#000; padding:23px 0; background-color:#efeeee; }

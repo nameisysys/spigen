@@ -60,15 +60,6 @@ button.slick-next:hover { opacity:.7; outline:none; }
     opacity: .25;
 }
 
-.slick-prev
-{
-    left: 0px;
-}
-
-.slick-next
-{
-    right: 0px;
-}
 /* Dots */
 .slick-dots
 {
