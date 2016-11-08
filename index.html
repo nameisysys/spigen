@@ -12,7 +12,7 @@
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.fullPage.js"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>
-<script>
+<!--script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -37,7 +37,7 @@
          js.src = "//connect.facebook.net/en_US/sdk.js";
          fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
-</script>
+</script-->
 <script type="text/javascript">
     $(document).ready(function() {
         $("#pickit-page").fullpage({
@@ -59,8 +59,7 @@
             dots: false,
             infinite: true,
             slidesToShow: 1,
-            slidesToScroll: 1,
-            mobileFirst: true
+            slidesToScroll: 1
         });
         $("#top-btn").on("click",function(){
             $("html,body").stop().animate({scrollTop:"0"});
@@ -76,6 +75,9 @@
         else if (height < target) {
           $("#top-btn").removeClass("show");
         }
+        if (matchMedia("(min-width:320px) and (max-width: 1024px)").matches) {
+          $(".section").addClass("fp-auto-height");
+        }
     });
 </script>
 </head>
@@ -85,7 +87,7 @@
     <header>
         <section class="box-width">
             <img id="logo" src="images/logo.png" alt="Pickit">
-            <img id="m-nav" src="images/m-nav.gif" alt="">
+            <img id="m-nav" src="images/m-nav.gif" alt="" onclick="$('nav').toggle();">
             <nav>
                 <ul id="#gnb">
                     <li><a href="#Pickit">Pickit</a></li>
@@ -114,7 +116,7 @@
                 </div>
             </section>
         </div>
-        <div class="section fp-auto-height" id="section1">
+        <div class="section" id="section1">
             <section class="box-width">
                 <h3>
                     <span>Pickit - It’s real</span><br>
@@ -188,36 +190,23 @@
                     <h3>Why must have pickit?</h3>
                     <h4><span id="font-com">Competitor</span> <span>vs</span> <span id="font-pic">Pickit</span></h4>
                     <section class="comparison slider">
-                    <div>
-                        <img src="images/section4-slide1.png">
-                        <ul id="slide1-group">
-                            <li>Pickit</li>
-                            <li id="slide1-item2">Monitor</li>
-                            <li>Leading Competitor</li>
-                        </ul>
-                        <h5>Photo Quality</h5>
-                        <p>Ink Free Technology (Dye Sublimation) has much wider color reproduction range<br>
-                        and makes photo quality more vivid, clear and sharp.</p>
-                    </div>
-                    <div>
-                        <ul id="slide2-group">
-                            <li>Pickit</li>
-                            <li>Monitor</li>
-                        </ul>
-                        <img src="images/section4-slide2.png">
-                        <h5 id="dura">Durability</h5>
-                        <p>Laminating layer will keep your memories forever by waterproof and fingerprint proof.</p>
-                    </div>
-                    <div>
-                        <img src="images/section4-slide3.png">
-                        <ul id="slide3-group">
-                            <li>Pickit</li>
-                            <li>Leading Competitor</li>
-                        </ul>
-                        <h5 id="tras">Trasmission Speed</h5>
-                        <p>Faster and easier connection by NFC and WiFi</p>
-                    </div>
-                </section>
+                        <div>
+                            <img src="images/section4-slide1.png">
+                            <h5>Photo Quality</h5>
+                            <p>Ink Free Technology (Dye Sublimation) has much wider color reproduction range<br>
+                            and makes photo quality more vivid, clear and sharp.</p>
+                        </div>
+                        <div>
+                            <img src="images/section4-slide2.png">
+                            <h5 id="dura">Durability</h5>
+                            <p>Laminating layer will keep your memories forever by waterproof and fingerprint proof.</p>
+                        </div>
+                        <div>
+                            <img src="images/section4-slide3.png">
+                            <h5 id="tras">Trasmission Speed</h5>
+                            <p>Faster and easier connection by NFC and WiFi</p>
+                        </div>
+                    </section>
                     <button type="button" class="buy-btn">Buy Now</button>
                 </div>
             </section>
@@ -226,7 +215,7 @@
             <section class="box-width">
                 <h3>Review</h3>
                 <h4>Our customers love pickit</h3>
-                <iframe id="youtube-video" src="https://www.youtube.com/embed/RZZK49uy8oM?rel=0&wmode=transparent" width="1052" height="591" frameborder="0" allowfullscreen></iframe>
+                <!--iframe id="youtube-video" src="https://www.youtube.com/embed/RZZK49uy8oM?rel=0&wmode=transparent" width="1052" height="591" frameborder="0" allowfullscreen></iframe-->
                 <div class="btn-wrap">
                     <button type="button" class="buy-btn">Buy Now</button>
                 </div>

@@ -22,7 +22,7 @@ time, mark, audio, video {
 *, *:before, *:after {
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 }
-ul:after { content:" "; display:block; clear:both; }
+ul:after, .box-width:after { content:" "; display:block; clear:both; }
 ul li { list-style:none; }
 html {
     font-size:22px;
@@ -139,6 +139,7 @@ header section > nav ul li a { font-family: 'Catamaran', sans-serif; text-decora
 #section4 .slick-slider { width:998px; margin:106px auto 0 auto; text-align:center; }
 #section4 .slick-prev { left:-61px; }
 #section4 .slick-next { right:-61px; }
+/*
 #section4 #slide1-group { margin:10px 0 75px 68px; }
 #section4 #slide1-group li { float:left; width:263px; margin-right:60px; font-size:0.9rem; font-weight:100; color:#fff; }
 #section4 #slide1-group li#slide1-item2 { width:230px; margin-right:55px; }
@@ -147,6 +148,7 @@ header section > nav ul li a { font-family: 'Catamaran', sans-serif; text-decora
 #section4 #slide3-group { width:100%; }
 #section4 #slide3-group li { float:left; width:50%; font-size:0.9rem; font-weight:100; color:#fff; text-align:left; padding-left:160px; }
 #section4 #slide3-group li+li { padding-left:55px; }
+*/
 
 #section4 h5 { color:#fff; font-weight:bold; font-size:2.5rem; }
 #section4 h5#dura,
