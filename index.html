@@ -70,16 +70,19 @@
         var target = 300;
 
         if(height > target) {
-          $("#top-btn").addClass("show");
+            $("#top-btn").addClass("show");
         }
         else if (height < target) {
-          $("#top-btn").removeClass("show");
+            $("#top-btn").removeClass("show");
         }
         if (matchMedia("(min-width:320px) and (max-width: 1024px)").matches) {
-          $(".section").addClass("fp-auto-height");
+            $(".section").addClass("fp-auto-height");
             $(".slick-slide").width( $("#section4 .slider").width() );
         }
     });
+    function closeNav() {
+        $('nav').hide();
+    }
 </script>
 </head>
 <body class="fp-enabled">
@@ -91,11 +94,11 @@
             <img id="m-nav" src="images/m-nav.gif" alt="" onclick="$('nav').toggle();">
             <nav>
                 <ul id="#gnb">
-                    <li><a href="#Pickit">Pickit</a></li>
-                    <li><a href="#ItsReal">Feature</a></li>
-                    <li><a href="#Comparison">Comparison</a></li>
-                    <li><a href="#Review">Review</a></li>
-                    <li><a href="#Spec">Spec</a></li>
+                    <li><a href="#Pickit;" onclick="return closeNav();">Pickit</a></li>
+                    <li><a href="#ItsReal" onclick="return closeNav();">Feature</a></li>
+                    <li><a href="#Comparison" onclick="return closeNav();">Comparison</a></li>
+                    <li><a href="#Review" onclick="return closeNav();">Review</a></li>
+                    <li><a href="#Spec" onclick="return closeNav();">Spec</a></li>
                 </ul>
             </nav>
         </section>

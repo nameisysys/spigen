@@ -1,5 +1,5 @@
-@media (min-width:1024px) {
-    
+@media (min-width:1025px) {
+    header section img#m-nav { display:none; }
 }
 
 @media (min-width:768px) and (max-width:1023px) {
@@ -14,13 +14,13 @@
     
     header { padding:10px; }
     header section { width:100%; padding:0; }
-    header section img#logo { width:auto; height:20px; float:left; margin:10px 20px; }
-    header section img#m-nav { float:right; width:auto; height:20px; margin:10px 20px; }
-    header section nav { display:none; width:100%; float:none; position:absolute; top:60px; left:0; }
+    header section img#logo { width:auto; height:15px; float:left; margin:10px 20px; }
+    header section img#m-nav { float:right; width:auto; height:15px; margin:10px 20px; }
+    header section nav { display:none; width:100%; padding:21px 0 20px 0; float:none; z-index:-1; position:absolute; top:54px; left:0; transition:all 100ms ease-in-out; -webkit-transition:all 100ms ease-in-out; -moz-transition:all 100ms ease-in-out; -o-transition:all 100ms ease-in-out; }
     header section nav li { float:none; text-align:center; width:100%; margin:0; }
     header section nav li a { font-size:1.5rem; }
     
-    #pickit-page { padding-top:60px; }
+    #pickit-page { padding-top:55px; }
     
     #section0 #mobile-image { display:block; width:100%; }
     #myVideo { display:none; }
@@ -55,11 +55,11 @@
     #section3 button.slick-prev,
     #section3 button.slick-next { top:30%; }
     
-    #section4 { margin-top:70px; }
+    #section4 { margin-top:55px; }
     #section4 .slider { position:static; text-align:center; width:80%; margin:0 auto; }
     #section4 .slider img { width:100%; }
     #section4 .slider .slick-slide { width:240px; }
-    #section4 section h3 { margin-top:40px; letter-spacing:-1px; }
+    #section4 section h3 { margin-top:50px; letter-spacing:-1px; }
     #section4 section h4 { margin:10px 0 20px 0; font-size:1.15rem; }
     #section4 section h4 span { font-size:1.5rem; vertical-align:top; }
     #section4 .slider h5 { font-size:2.25rem; text-align:center; letter-spacing:-1px; margin:30px 0 10px 0 !important; }
@@ -70,10 +70,19 @@
     #section5 h3 { margin-top:70px; font-size:2.45rem; }
     #section5 h4 { font-size:1.5rem; }
     #section5 iframe#youtube-video { width:100% !important; height:auto !important; margin:30px 0; }
-    #section5 .fb-commnets { display:block; width:100% !important; height:auto !important; margin:20px 0; }
+    #section5 div.fb-commnets.fb_iframe_widget { display:block; width:100% !important; height:auto !important; margin:20px 0; }
 
-    #section6 h3 { margin-top:70px; font-size:2.45rem; }
-    #section6 h3 { margin-top:70px; font-size:2.45rem; }
+    #section6 { background:none; text-align:center; }
+    #section6 section.box-width { padding:0; }
+    #section6 h3 { margin:70px 0 35px 0; font-size:2.45rem; }
+    #section6 table { width:90%; margin:0 auto; }
+    #section6 table tr th,
+    #section6 table tr td { padding:3px 0; font-size:1.2rem; text-align:left; }
+    #section6 table tr th { width:35%; }
+    #section6 table tr td { width:65%; }
+    #section6 button.buy-btn { float:none; margin:30px 0; }
+    
+    footer { font-size:1.2rem; padding:23px 5.3%; }
     
     button.slick-prev,
     button.slick-next { width:30px; height:30px; background-size:100%; }
