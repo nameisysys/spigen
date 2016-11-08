@@ -12,15 +12,15 @@
     button.buy-btn { width:120px; font-weight:300; font-size:1.2rem; }
     div.fp-tableCell { vertical-align:top; }
     
-    header { padding:10px; }
+    header { padding:0; }
     header section { width:100%; padding:0; }
-    header section img#logo { width:auto; height:15px; float:left; margin:10px 20px; }
-    header section img#m-nav { float:right; width:auto; height:15px; margin:10px 20px; }
-    header section nav { display:none; width:100%; padding:21px 0 20px 0; float:none; z-index:-1; position:absolute; top:54px; left:0; transition:all 100ms ease-in-out; -webkit-transition:all 100ms ease-in-out; -moz-transition:all 100ms ease-in-out; -o-transition:all 100ms ease-in-out; }
+    header section img#logo { width:auto; height:15px; float:left; margin:15px 20px; }
+    header section img#m-nav { float:right; width:auto; height:17px; margin:14px 20px; }
+    header section nav { display:none; width:100%; padding:21px 0 20px 0; float:none; z-index:-1; position:absolute; top:44px; left:0; transition:all 100ms ease-in-out; -webkit-transition:all 100ms ease-in-out; -moz-transition:all 100ms ease-in-out; -o-transition:all 100ms ease-in-out; }
     header section nav li { float:none; text-align:center; width:100%; margin:0; }
     header section nav li a { font-size:1.5rem; }
     
-    #pickit-page { padding-top:55px; }
+    #pickit-page { padding-top:45px; }
     
     #section0 #mobile-image { display:block; width:100%; }
     #myVideo { display:none; }
