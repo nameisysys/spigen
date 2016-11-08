@@ -44,8 +44,8 @@ border-radius: 34px;
 /*header*/
 header { width:100%; background-color:#efeeee; position:fixed; top:0; left:0; right:0; z-index:99999; }
 header section { padding:23px 48px; }
-header section > img { width:102px; height:29px; }
-header section > nav { float:right; }
+header section > img#logo { width:102px; height:29px; }
+header section > nav { float:right; background-color:#efeeee; }
 header section > nav ul li { float:left; margin-right:40px; }
 header section > nav ul li a { font-family: 'Catamaran', sans-serif; text-decoration:none; color:#333; font-weight:100; }
 
@@ -53,6 +53,7 @@ header section > nav ul li a { font-family: 'Catamaran', sans-serif; text-decora
 
 /*page0 - Pickit*/
 #section0 { position:relative; }
+#section0 #mobile-image { display:none; }
 #section0 .fp-tableCell { display:block; }
 #myVideo{
     position: absolute;
