@@ -71,6 +71,9 @@
     #section5 h4 { font-size:1.5rem; }
     #section5 iframe#youtube-video { width:100% !important; height:auto !important; margin:30px 0; }
     #section5 .fb-commnets { display:block; width:100% !important; height:auto !important; margin:20px 0; }
+
+    #section6 h3 { margin-top:70px; font-size:2.45rem; }
+    #section6 h3 { margin-top:70px; font-size:2.45rem; }
     
     button.slick-prev,
     button.slick-next { width:30px; height:30px; background-size:100%; }
