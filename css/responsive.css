@@ -2,7 +2,13 @@
     header section img#m-nav { display:none; }
 }
 
-@media (min-width:768px) and (max-width:1023px) {
+@media (min-width:768px) {
+    /*header*/
+    header { width:100%; background-color:#efeeee; position:fixed; top:0; left:0; right:0; z-index:99999; }
+    header section { padding:23px 48px; }
+    header section > img#logo { width:102px; height:29px; }
+    header section > nav { float:right; background-color:#efeeee; }
+    header section > nav ul li { float:left; margin-right:40px; }
 }
 
 @media (min-width:320px) and (max-width:1024px) {
@@ -88,7 +94,7 @@
     button.slick-next { width:30px; height:30px; background-size:100%; }
     button.slick-prev { left:15px !important; }
     button.slick-next { right:15px !important; }
-    ul.slick-dots { margin-top:10px; }
+    ul.slick-dots { display:none; }
     
 }
 
