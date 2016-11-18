@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Raleway:200,400');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Raleway:200,400,500');
 /*Amatic - Regulat : 400*/
 /*       - Extra Light : 200*/
 
@@ -14,41 +14,73 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-    font-family: 'Raleway', sans-serif;
-    line-height:normal;
-    color: #333;
-}
-body { -webkit-font-smoothing:subpixel-antialiased; }
-*, *:before, *:after {
-  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
-}
+time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; font-family: 'Raleway', sans-serif; line-height:normal; color: #333; }
+html { font-size: 22px; }
+body { -webkit-font-smoothing:subpixel-antialiased; overflow-x:hidden; }
+*, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 a { text-decoration: none; color: #333; }
-ul:after, .box-width:after { content: " "; display: block; clear: both; }
 ul li { list-style: none; }
-html {
-    font-size: 22px;
-}
-.box-width { max-width: 1300px; margin: 0 auto; }
+ul:after, .box-width:after { content: " "; display: block; clear: both; }
 
 /*Common*/
-.box-width h2 { font-family: 'Amatic SC', cursive; font-size: 5.18rem; color: #e36464; font-weight: bold; letter-spacing: 0.03rem; }
-.box-width p.h2-sub { font-size: 1.09rem; font-weight: 200; }
+.box-width { max-width:1300px; margin:0 auto; position:relative; }
+.box-width h2 { font-family:'Amatic SC', cursive; font-size:5.18rem; color:#e36464; font-weight:bold; letter-spacing:0.03rem; text-transform:uppercase; position:relative; z-index:1; }
+.box-width h3 { font-size:1.72rem; font-weight:500; color:#444; margin-bottom:16px; position:relative; z-index:1; }
+.box-width p.h2-sub { font-size:1.09rem; color:#222; font-weight:200;line-height:1.45rem; position:relative; z-index:1; }
+.floating-images { position:absolute; z-index:0; }
 /*Common*/
 
-header { width:100%; text-align: center; padding:77px 0 44px 0; font-size:0; }
-header p { font-size: 1.09rem; padding: 12px 0 18px 0; }
+header { width:100%; text-align:center; padding:77px 0 44px 0; font-size:0; background-color:#fff; }
+header p { font-size:1.09rem; padding:12px 0 18px 0; letter-spacing: 0.22rem; }
 
-nav { width: 100%; border-bottom: 1px solid #999; border-top: 1px solid #999; }
-nav div ul { width: 100%; }
-nav div ul li { float: left; width: 20%; text-align: center; font-size: 1.136rem; padding: 26px 0; }
+nav { width:100%; border-bottom:1px solid #999; border-top:1px solid #999; background-color:#fff; }
+nav.sticky-header { position:fixed; top:-1px; z-index:9999; }
+nav div ul { width:100%; }
+nav div ul li { float:left; width:20%; text-align:center; font-size: 1.136rem; padding:26px 0; }
 
-section#pickit { text-align:center; background-color:#f5f5f5; }
-section#pickit h2 { padding-top:98px; }
-section#pickit p.h2-sub { margin-bottom:70px; }
-section#pickit div.box-video { padding-bottom:206px; }
+section#Pickit { text-align:center; background-color:#f5f5f5; }
+section#Pickit h2 { padding-top:98px; }
+section#Pickit p.h2-sub { margin-bottom:70px; }
+section#Pickit div.box-video { padding-bottom:202px; position:relative; z-index:1; }
+section#Pickit div.visual-01 { top:148px; right:-185px; }
+section#Pickit div.visual-02 { bottom:0; left:-79px; }
+
+section#Feature-01 div.box-width { text-align:left; padding:0 60px; }
+section#Feature-01 h2 { padding-top:72px; }
+/*section#Feature h2 span { margin-top:5px; font-family:'Amatic SC', cursive; color:#e36464; }*/
+section#Feature-01 div.visual-03 { top:-116px; left:936px; }
+section#Feature-01 div.visual-04 { top:78px; right:-214px; }
+section#Feature-01 div.visual-05 { z-index:1; top:558px; left:-486px; }
+section#Feature-01 div.box-paris { width:100%; height:500px; background-image:url("../images/paris_bg.jpg"); background-position:center; background-repeat:no-repeat; margin-top:205px; }
+
+section#Feature-02 div.easy { padding:0 50px; }
+section#Feature-02 div.easy img#refill-image { float:left; margin:98px 0 76px -311px; }
+section#Feature-02 div.easy h2 { padding-top:298px; }
+section#Feature-02 div.easy .dot-01 { top:129px; left:640px; }
+section#Feature-02 div.easy .dot-02 { top:639px; right:107px; }
+section#Feature-02 div.easy .dot-03 { bottom:105px; right:471px; }
+section#Feature-02 div.easy .visual-13 { top:639px; right:-246px; }
+
+section#Feature-03 { background-color:#e38484; }
+section#Feature-03 div.decoration { padding:0 42px; }
+section#Feature-03 div.decoration #desc-wrap { float:left; }
+section#Feature-03 div.decoration h2 { line-height:4.9rem; color:#fff; padding-top:160px; margin-bottom:13px; }
+section#Feature-03 div.decoration ul#icon-group { margin:37px 0 367px 0; }
+section#Feature-03 div.decoration ul#icon-group li { float:left; color:#fff; font-size:0.9rem; text-align:center; margin-right:62px; }
+section#Feature-03 div.decoration ul#icon-group li img { display:block; margin:0 auto; }
+section#Feature-03 div.decoration .slider-wrap { width:606px; height:976px; position:absolute; z-index:1; top:-36px; right:0; background-image:url("../images/visual_07.png"); background-repeat:no-repeat; 
+    -ms-transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg); }
+section#Feature-03 div.decoration .slider-iphone { width:382px; height:679px; margin:134px 0 0 112px; }
+section#Feature-03 div.decoration .visual-08 { top:-35px; right:340px; z-index:0; }
+section#Feature-03 div.decoration .visual-14 { bottom:-60px; left:-135px; }
+
+section#Comparison { text-align:center; }
+section#Comparison h2 { color:#444; padding-top:82px; }
+section#Comparison .slider-wrap { width:1243px; height:774px; background-image:url("../images/visual_09.png"); background-repeat:no-repeat; padding:87px 0 0 55px; margin-bottom:116px; }
+section#Comparison .slider-comp { width:1133px; }
+section#Comparison .slider-comp h4 { color:#dc504c; font-size:2.045rem; letter-spacing:-0.09rem; }
+section#Comparison .slider-comp p { font-size:0.9rem; margin-top:12px; }
+section#Comparison .slider-comp .slick-prev,
+section#Comparison .slider-comp .slick-next { bottom:33px }
