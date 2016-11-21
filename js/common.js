@@ -1,35 +1,50 @@
 $(document).ready(function () {
     $(window).scroll(function () {
-        var height = $(document).scrollTop();
-        var target = 238;
+        if (matchMedia("(min-width:1300px)").matches) {
+            var height = $(document).scrollTop();
+            var target = 238;
 
-        if (height > target) {
-            $("nav").addClass("sticky-header");
-            $("#Pickit").css({
-                paddingTop: "83px"
-            });
-        } else if (height < target) {
-            $("nav").removeClass("sticky-header");
-            $("#Pickit").css({
-                paddingTop: "0"
-            });
+            if (height > target) {
+                $("nav").addClass("sticky-header");
+                $("#Pickit").css({
+                    paddingTop: "83px"
+                });
+            } else if (height < target) {
+                $("nav").removeClass("sticky-header");
+                $("#Pickit").css({
+                    paddingTop: "0"
+                });
+            }
         }
     }).trigger('scroll');
 
     $("nav a").click(function () {
+        if (matchMedia("(max-width:1299px)").matches) {
+            headerHeight = 49;
+        } else {
+            headerHeight = 80;
+        }
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
             var $target = $(this.hash);
             $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
             if ($target.length) {
                 var targetOffset = $target.offset().top;
                 $('html,body').animate({
-                    scrollTop: targetOffset - 80
+                    scrollTop: targetOffset - headerHeight
                 }, 400);
+                if (matchMedia("(max-width:1299px)").matches) {
+                    $("nav").hide();
+                }
                 return false;
             }
         }
     });
 
+    $("#nav-toggle").click(function(){
+        $("nav").toggle();
+        $(this).toggleClass("toggle-on");
+    });
+    
     $(".slider-iphone").slick({
         dots: true,
         autoplay: true,
@@ -38,6 +53,10 @@ $(document).ready(function () {
         nextArrow: "<i class='fa fa-chevron-right slick-next' aria-hidden='true'></i>"
     });
     $(".slider-comp").slick({
+        prevArrow: "<img class='slick-prev' src='images/full-left.png'>",
+        nextArrow: "<img class='slick-next' src='images/full-right.png'>"
+    });
+    $(".slider-comp-m").slick({
         prevArrow: "<img class='slick-prev' src='images/full-left.png'>",
         nextArrow: "<img class='slick-next' src='images/full-right.png'>"
     });

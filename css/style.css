@@ -93,6 +93,7 @@ section#Comparison div.box-width { padding-bottom:116px; }
 section#Comparison h2 { color:#444; padding-top:82px; }
 section#Comparison .slider-wrap { width:1243px; height:774px; background-image:url("../images/visual_09.png"); background-repeat:no-repeat; padding:87px 0 0 55px; margin:0 auto; }
 section#Comparison .slider-comp { width:1133px; }
+section#Comparison .slider-comp-m { display:none; }
 section#Comparison .slider-comp h4 { color:#dc504c; font-size:2.045rem; letter-spacing:-0.09rem; }
 section#Comparison .slider-comp p { font-size:0.9rem; margin-top:12px; }
 section#Comparison .slider-comp .slick-prev,
