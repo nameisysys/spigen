@@ -33,7 +33,9 @@ $(document).ready(function () {
     $(".slider-iphone").slick({
         dots: true,
         autoplay: true,
-        autoplaySpeed: 2000
+        autoplaySpeed: 2000,
+        prevArrow: "<i class='fa fa-chevron-left slick-prev' aria-hidden='true'></i>",
+        nextArrow: "<i class='fa fa-chevron-right slick-next' aria-hidden='true'></i>"
     });
     $(".slider-comp").slick({
         prevArrow: "<img class='slick-prev' src='images/full-left.png'>",
