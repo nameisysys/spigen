@@ -28,7 +28,7 @@ html { font-size: 22px; }
     section#Feature-02 .amazon-btn { right:inherit; top:88%; }
     section#Comparison .amazon-btn { bottom:5%; }
     section#Review .amazon-btn { bottom:7%; }
-    section#Spec .amazon-btn { text-align:center; top:inherit; bottom:37%; right:inherit; }
+    section#Spec .amazon-btn { text-align:center; top:inherit; bottom:39%; right:inherit; }
     
     header { padding:15px 5%; position:fixed; top:0; background-color:#fff; z-index:9999; }
     header h1 { float:left; width:21%; }
