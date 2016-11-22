@@ -19,13 +19,17 @@ html { font-size: 22px; }
     .visual-05, .visual-08, .visual-14, .visual-15, .visual-16, .dot-03 { display:none; }
     
     /*Amazon Button*/
-    section#Pickit .amazon-btn { top:86%; }
-    section#Feature div > .amazon-btn { display:none; }
-    section#Feature-02 .amazon-btn { right:inherit; top:88%; }
+    section#Pickit .amazon-btn { position:static; margin-bottom:60px; }
+    section#Feature div > .amazon-btn { position:static; text-align:center; margin-top:10px; }
+    section#Feature-02 .amazon-btn { position:static; margin-bottom:20px; }
     section#Comparison .amazon-btn { bottom:5%; }
     section#Review .amazon-btn { bottom:7%; }
-    section#Spec .amazon-btn { text-align:center; top:inherit; bottom:39%; right:inherit; }
-    section#Feature div.box-paris .amazon-btn { display:block; top:inherit; bottom:20%; text-align:center; }
+    section#Spec .amazon-btn { position:static; text-align:center; top:auto; right:auto; }
+    header .amazon-btn-floating-m { position:absolute; bottom:-50px;  right:0; z-index:9999; display:block; }
+    header .amazon-btn-floating-m img,
+    nav .amazon-btn-floating-m img { width:170px; }
+    nav .amazon-btn-floating-m { position:absolute; bottom:-55px; right:0; }
+    nav div.box-width { overflow:inherit; }
     
     header { padding:15px 5%; position:fixed; top:0; background-color:#fff; z-index:9999; }
     header h1 { float:left; width:21%; }
@@ -36,8 +40,6 @@ html { font-size: 22px; }
     header #nav-toggle img {  width:100%; }
     header .box-width { overflow:inherit; }
     header .amazon-btn { display:none; }
-    header div .amazon-btn-floating-m { position:absolute; bottom:-70px;  right:-1.5%; z-index:9999; display:block; }
-    header div .amazon-btn-floating-m img { width:170px; }
     
     nav { width:100%; display:none; border-bottom:none; position:fixed; z-index:9999; }
     nav div ul { width:100%; }
@@ -47,20 +49,20 @@ html { font-size: 22px; }
     section#Pickit h2 { padding:50px 5% 0 5%; margin-top:51px; }
     section#Pickit p.h2-sub { margin-bottom:30px; }
     section#Pickit div.visual-01 { width:40%; top:18%; right:-20%; }
-    section#Pickit div.box-video { max-width:100%; width:100%; padding-bottom:150px; }
+    section#Pickit div.box-video { max-width:100%; width:100%; padding-bottom:20px; }
     section#Pickit div.box-video iframe { width:100%; height:250px; }
     section#Pickit div.visual-02 { width:40%; bottom:-2%; left:-15%; }
     
     section#Feature h2 { font-size:3.5rem; padding-top:40px; }
     section#Feature div.box-width { text-align:center; padding:0; overflow:inherit; }
-    section#Feature div.box-paris { margin-top:150px; height:300px; background-size:cover; }
+    section#Feature div.box-paris { margin-top:80px; height:300px; background-size:cover; }
     section#Feature div.box-paris #paris-inner { width:100%; height:300px; }
     section#Feature div.visual-03 { top:-42px; right:-670px; left:initial; max-width:800px !important; }
     section#Feature div.visual-04 { top:-46%; right:-40%; }
     
     section#Feature-02 div.easy { padding:0; text-align:center; }
     section#Feature-02 div.easy img#refill-image-01 { display:none; }
-    section#Feature-02 div.easy img#refill-image-02 { display:block; max-width:100%; margin:-10px -4% 30px 0; }
+    section#Feature-02 div.easy img#refill-image-02 { display:block; max-width:100%; margin:-10px -4% 0 0; }
     section#Feature-02 div.easy h2 { padding-top:60px; }
     section#Feature-02 div.easy .dot-01 { top:15%; left:-5%; width:15%; }
     section#Feature-02 div.easy .dot-02 { top:35%; right:-3%; width:20%; }
@@ -118,7 +120,7 @@ html { font-size: 22px; }
     
     section#Spec h2#spec-h2 { display:none; }
     section#Spec h2#spec-h2-m { display:block; padding:45px 0 0 0; text-align:center; float:none; color:#555; }
-    section#Spec #spec-table { width:100%; height:auto; margin:50px 0 50px 0; padding:0; background-size:100% 100%; background-position:top center; background-repeat:no-repeat; }
+    section#Spec #spec-table { width:100%; height:auto; margin:50px 0 0 0; padding:0; background-size:100% 100%; background-position:top center; background-repeat:no-repeat; }
     section#Spec .visual-12 { position:static; margin-bottom:30px; }
     section#Spec #spec-table table { width:90%; margin:0 40px 90px 50px; font-size:0.7rem; }
     section#Spec #spec-table table tr th { padding:5px 4px 0 0; width:auto; }
