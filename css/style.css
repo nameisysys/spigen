@@ -125,4 +125,5 @@ section#Spec .visual-12 { top:222px; left:0; }
 section#Spec .amazon-btn { position:absolute; top:710px; right:25px; }
 
 footer { width:100%; background-color:#e0b4b4; padding:88px 0; }
-footer div { color:#fff; text-align:center; font-size:0.9rem; }
+footer div.box-width { color:#fff; text-align:center; font-size:0.9rem; }
+footer div.box-width div { color:#fff; display:inline-block; }
