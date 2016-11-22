@@ -24,11 +24,12 @@ html { font-size: 22px; }
     
     /*Amazon Button*/
     section#Pickit .amazon-btn { top:86%; }
-    section#Feature .amazon-btn { text-align:center; top:241%; }
+    section#Feature div > .amazon-btn { display:none; }
     section#Feature-02 .amazon-btn { right:inherit; top:88%; }
     section#Comparison .amazon-btn { bottom:5%; }
     section#Review .amazon-btn { bottom:7%; }
     section#Spec .amazon-btn { text-align:center; top:inherit; bottom:39%; right:inherit; }
+    section#Feature div.box-paris .amazon-btn { display:block; top:inherit; bottom:20%; text-align:center; }
     
     header { padding:15px 5%; position:fixed; top:0; background-color:#fff; z-index:9999; }
     header h1 { float:left; width:21%; }
@@ -54,7 +55,7 @@ html { font-size: 22px; }
     section#Feature div.box-paris { margin-top:150px; height:300px; background-size:cover; }
     section#Feature div.box-paris #paris-inner { width:100%; height:300px; }
     section#Feature div.visual-03 { top:-42px; right:-670px; left:initial; max-width:800px !important; }
-    section#Feature div.visual-04 { top:-142px; right:-110px; }
+    section#Feature div.visual-04 { top:-46%; right:-50%; }
     
     section#Feature-02 div.easy { padding:0; text-align:center; }
     section#Feature-02 div.easy img#refill-image-01 { display:none; }
@@ -114,10 +115,11 @@ html { font-size: 22px; }
     section#photo-wrap ul li:last-child { display:none; }
     section#photo-wrap ul li img { width:100%; }
     
-    section#Spec h2 { padding:60px 0 0 0; text-align:center; float:none; }
-    section#Spec #spec-table { width:100%; height:auto; margin:0 0 50px 0; padding:0; background-size:100%; background-position:top center; background-repeat:no-repeat; }
+    section#Spec h2#spec-h2 { display:none; }
+    section#Spec h2#spec-h2-m { padding:20px 0 0 0; text-align:center; float:none; color:#555; }
+    section#Spec #spec-table { width:100%; height:auto; margin:50px 0 50px 0; padding:0; background-size:100% 100%; background-position:top center; background-repeat:no-repeat; }
     section#Spec .visual-12 { position:static; margin-bottom:30px; }
-    section#Spec #spec-table table { width:90%; margin:90px 40px 90px 50px; font-size:0.7rem; }
+    section#Spec #spec-table table { width:90%; margin:0 40px 90px 50px; font-size:0.7rem; }
     section#Spec #spec-table table tr th { padding:5px 4px 0 0; width:auto; }
     
     footer { padding:40px 0; }
@@ -160,7 +162,7 @@ html { font-size: 22px; }
     section#Feature-03 .store-btn a { margin-right:10px; }
 }*/
 
-@media (min-width:768px) and (max-width:1023px) {
+@media (min-width:667px) and (max-width:1023px) {
     html { font-size:20px; }
     section#Review div.box-video iframe,
     section#Pickit div.box-video iframe { height:350px; }
@@ -187,13 +189,13 @@ html { font-size: 22px; }
     
     section#Spec h2 { float:none; padding:88px 0 0 0; text-align:center; }
     section#Spec #spec-table { float:none; margin:0 auto; width:90%; height:660px; margin-bottom:30px; }
-    section#Spec #spec-table table { width:100%; padding:170px 80px; font-size:1rem; margin:0; }
+    section#Spec #spec-table table { width:100%; padding:130px 80px; font-size:1rem; margin:0; }
     section#Spec .visual-12 { margin-top:50px; }
     section#Spec .amazon-btn { bottom:43%; }
     section#Spec #spec-table table tr th { padding-right:8px; }
 }
 
-@media (min-width:1024px) and (max-width:1299px) {
+@media (min-width:1024px) and (max-width:1200px) {
     html { overflow-x:hidden; }
     section#Feature-03 div.decoration .slider-wrap { right:-100px; }
     section#Feature-03 div.decoration .visual-08 { right:300px; }

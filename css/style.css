@@ -56,6 +56,7 @@ section#Feature h2 { padding-top:72px; font-weight:bold; }
 section#Feature div.visual-03 { top:-116px; left:936px; }
 section#Feature div.visual-05 { z-index:1; top:558px; left:-486px; }
 section#Feature div.box-paris { width:100%; height:500px; background-image:url("../images/paris_bg.jpg"); background-position:center; background-repeat:no-repeat; margin-top:205px; }
+section#Feature div.box-paris .amazon-btn { display:none; }
 section#Feature div#paris-inner { width:1300px; margin:0 auto; position:relative; }
 section#Feature div.visual-04 { top:-522px; right:-214px; }
 section#Feature .amazon-btn { position:absolute; width:100%; text-align:left; top:430px; }
@@ -117,7 +118,8 @@ section#photo-wrap { text-align:center; width:100%; }
 section#photo-wrap ul { width:3100px; margin-left:-68%; font-size:0; }
 section#photo-wrap ul li { float:left; margin:0 10px; }
 
-section#Spec h2 { float:left; color:#555; padding:88px 0 0 55px; }
+section#Spec h2#spec-h2 { float:left; color:#555; padding:88px 0 0 55px; }
+section#Spec h2#spec-h2-m { display:none; }
 section#Spec #spec-table { width:678px; height:648px; background-image:url("../images/visual_11.png"); float:right; margin:51px -67px 390px; 0; padding:150px 0 0 100px; }
 section#Spec #spec-table table { font-size:0.863rem; color:#666; letter-spacing:-0.045rem; }
 section#Spec #spec-table table tr th { color:#292828; padding:10px 0; text-align:left; width:150px; }
