@@ -35,6 +35,7 @@ html { font-size: 22px; }
     header #nav-toggle.toggle-on { opacity:.6; }
     header #nav-toggle img {  width:100%; }
     header .box-width { overflow:inherit; }
+    header .amazon-btn { display:none; }
     header div .amazon-btn-floating-m { position:absolute; bottom:-70px;  right:-1.5%; z-index:9999; display:block; }
     header div .amazon-btn-floating-m img { width:170px; }
     
