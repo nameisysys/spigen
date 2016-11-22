@@ -162,6 +162,7 @@ html { font-size: 22px; }
 
 @media (min-width:768px) and (max-width:1023px) {
     html { font-size:20px; }
+    section#Review div.box-video iframe,
     section#Pickit div.box-video iframe { height:350px; }
     section#Feature div.visual-04 { right:-410px; top:-290px; }
     .amazon-btn img { width:220px; }
