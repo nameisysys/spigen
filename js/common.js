@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $(window).scroll(function () {
-        if (matchMedia("(min-width:1300px)").matches) {
+        if (matchMedia("(min-width:1024px)").matches) {
             var height = $(document).scrollTop();
             var target = 238;
 
@@ -19,7 +19,7 @@ $(document).ready(function () {
     }).trigger('scroll');
 
     $("nav a").click(function () {
-        if (matchMedia("(max-width:1299px)").matches) {
+        if (matchMedia("(max-width:1023px)").matches) {
             headerHeight = 49;
         } else {
             headerHeight = 80;
@@ -32,7 +32,7 @@ $(document).ready(function () {
                 $('html,body').animate({
                     scrollTop: targetOffset - headerHeight
                 }, 400);
-                if (matchMedia("(max-width:1299px)").matches) {
+                if (matchMedia("(max-width:1023px)").matches) {
                     $("nav").hide();
                     $("#nav-toggle").toggleClass("toggle-on");
                 }

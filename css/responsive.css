@@ -119,17 +119,21 @@ html { font-size: 22px; }
     section#Spec #spec-table table tr th { padding:5px 4px 0 0; width:auto; }
 }
 
-@media (min-width:1023px) and (max-width:1299px) {
+/*@media (min-width:768px) and (max-width:1299px) {
     header { width:100%; text-align:center; padding:77px 0 44px 0; font-size:0; background-color:#fff; }
     header p { font-size:1.09rem; padding:12px 0 18px 0; letter-spacing: 0.22rem; }
     header .amazon-btn { position:absolute; top:60px; right:30px; }
     header #nav-toggle { display:none; }
 
-    nav { width:100%; border-bottom:1px solid #999; border-top:1px solid #999; background-color:#fff; }
+    nav { width:100%; border-bottom:1px solid #999; border-top:1px solid #999; background-color:#fff; display:block; }
     nav.sticky-header { position:fixed; top:-1px; z-index:9998; }
     nav div ul { width:100%; }
     nav div ul li { float:left; width:20%; text-align:center; font-size: 1.136rem; padding:26px 0; }
     nav div .amazon-btn { position:absolute; top:64px; right:10px; z-index:9999; }
+    
+    section#Pickit div.box-video iframe { height:350px; }
+    
+    section#Feature div.visual-04 { right:-50%; top:-100%; }
     
     section#Feature-03 { background-color:#e38484; }
     section#Feature-03 div.decoration { padding:0 42px; }
@@ -150,6 +154,15 @@ html { font-size: 22px; }
     section#Feature-03 div.decoration .visual-14 { bottom:-60px; left:-135px; }
     section#Feature-03 .store-btn { position:absolute; top:745px; left:42px; font-size:0; }
     section#Feature-03 .store-btn a { margin-right:10px; }
+}*/
+
+@media (min-width:1024px) and (max-width:1299px) {
+    section#Feature-03 div.decoration .slider-wrap { right:-100px; }
+    section#Feature-03 div.decoration .visual-08 { right:300px; }
+    section#Spec .visual-12 { position:static; margin-top:60px; }
+    section#Spec h2 { float:none; padding:88px 0 0 0; text-align:center; }
+    section#Spec #spec-table { float:none; margin:0 auto; }
+    section#Spec .amazon-btn { width:100%; text-align:center; top:875px; }
 }
 
 @media (max-width:320px) {
