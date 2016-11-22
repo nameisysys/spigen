@@ -1,4 +1,16 @@
 $(document).ready(function () {
+    if (matchMedia("(min-width:768px) and (max-width:1023px)").matches) {
+        var headerH = $('header').outerHeight();
+        $("nav").css("top",headerH+"px");
+    }
+    $(window).resize(function() {
+        if (matchMedia("(min-width:768px) and (max-width:1023px)").matches) {
+            var headerH = $('header').outerHeight();
+            $("nav").css("top",headerH+"px");
+        } else if (matchMedia("(min-width:1024px)").matches) {
+            $("nav").show().css("top","-1px");
+        }
+    });
     $(window).scroll(function () {
         if (matchMedia("(min-width:1024px)").matches) {
             var height = $(document).scrollTop();
@@ -18,9 +30,6 @@ $(document).ready(function () {
         }
     }).trigger('scroll');
 
-    if (matchMedia("(min-width:768px)").matches) {
-        $("nav").css("top",headerH);
-    }
     
     $("nav a").click(function () {
         if (matchMedia("(max-width:1023px)").matches) {
