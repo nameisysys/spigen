@@ -1,10 +1,11 @@
 $(document).ready(function () {
-    if (matchMedia("(min-width:768px) and (max-width:1023px)").matches) {
+    if (matchMedia("(max-width:1023px)").matches) {
         var headerH = $('header').outerHeight();
         $("nav").css("top",headerH+"px");
+        console.log("ss");
     }
     $(window).resize(function() {
-        if (matchMedia("(min-width:768px) and (max-width:1023px)").matches) {
+        if (matchMedia("(max-width:1023px)").matches) {
             var headerH = $('header').outerHeight();
             $("nav").css("top",headerH+"px");
         } else if (matchMedia("(min-width:1024px)").matches) {
