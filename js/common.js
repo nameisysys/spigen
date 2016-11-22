@@ -18,6 +18,10 @@ $(document).ready(function () {
         }
     }).trigger('scroll');
 
+    if (matchMedia("(min-width:768px)").matches) {
+        $("nav").css("top",headerH);
+    }
+    
     $("nav a").click(function () {
         if (matchMedia("(max-width:1023px)").matches) {
             headerHeight = 49;
