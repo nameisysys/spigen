@@ -34,6 +34,7 @@ $(document).ready(function () {
                 }, 400);
                 if (matchMedia("(max-width:1299px)").matches) {
                     $("nav").hide();
+                    $("#nav-toggle").toggleClass("toggle-on");
                 }
                 return false;
             }

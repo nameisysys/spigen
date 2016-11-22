@@ -8,12 +8,12 @@ html { font-size: 22px; }
     /*.box-width { max-width:1300px; margin:0 auto; position:relative; }*/
 }
 
-@media (min-width:320px) and (max-width:1024px) {
+@media (max-width:1023px) {
     html { font-size:16px; overflow-x:hidden; }
     .box-width { max-width:100%; overflow:hidden; padding:0; }
     /*.amazon-btn { display:none; }*/
-    .amazon-btn { width:50% !important; margin:0 auto; z-index:9; }
-    .amazon-btn img { width:100%; }
+    .amazon-btn { width:100%; margin:0 auto; z-index:9; }
+    .amazon-btn img { width:170px; }
     
     .box-width h2 { font-size:3.5rem; }
     .box-width h3 { font-size:1.5rem; margin-bottom:10px; }
@@ -21,6 +21,14 @@ html { font-size: 22px; }
     .floating-images { max-width:100%; }
     .floating-images img { width:100%; }
     .visual-05, .visual-08, .visual-14, .visual-15, .visual-16 { display:none; }
+    
+    /*Amazon Button*/
+    section#Pickit .amazon-btn { top:86%; }
+    section#Feature .amazon-btn { text-align:center; top:241%; }
+    section#Feature-02 .amazon-btn { right:inherit; top:88%; }
+    section#Comparison .amazon-btn { bottom:5%; }
+    section#Review .amazon-btn { bottom:7%; }
+    section#Spec .amazon-btn { text-align:center; top:inherit; bottom:37%; right:inherit; }
     
     header { padding:15px 5%; position:fixed; top:0; background-color:#fff; z-index:9999; }
     header h1 { float:left; width:21%; }
@@ -37,9 +45,9 @@ html { font-size: 22px; }
     section#Pickit h2 { padding:50px 5% 0 5%; margin-top:51px; }
     section#Pickit p.h2-sub { margin-bottom:30px; }
     section#Pickit div.visual-01 { width:40%; top:18%; right:-20%; }
-    section#Pickit div.box-video { max-width:100%; width:100%; padding-bottom:100px; }
+    section#Pickit div.box-video { max-width:100%; width:100%; padding-bottom:150px; }
     section#Pickit div.box-video iframe { width:100%; height:250px; }
-    section#Pickit div.visual-02 { width:40%; bottom:-5%; left:-15%; }
+    section#Pickit div.visual-02 { width:40%; bottom:-2%; left:-15%; }
     
     section#Feature h2 { font-size:3.5rem; padding-top:40px; }
     section#Feature div.box-width { text-align:center; padding:0; overflow:inherit; }
@@ -50,7 +58,7 @@ html { font-size: 22px; }
     
     section#Feature-02 div.easy { padding:0; text-align:center; }
     section#Feature-02 div.easy img#refill-image-01 { display:none; }
-    section#Feature-02 div.easy img#refill-image-02 { display:block; max-width:100%; margin-left:-4%; margin-top:-10px; }
+    section#Feature-02 div.easy img#refill-image-02 { display:block; max-width:100%; margin:-10px -4% 30px 0; }
     section#Feature-02 div.easy h2 { padding-top:60px; }
     
     section#Feature-03 div.decoration { padding:0 3%; }
@@ -82,6 +90,7 @@ html { font-size: 22px; }
     section#Feature-03 .store-btn a img { width:110px; }
     
     section#Comparison h2 { padding-top:35px; }
+    section#Comparison div.box-width { padding-bottom:100px; }
     section#Comparison .slider-wrap { width:100%; padding:20px 0; height:auto; background-size:100% 100%; background-image:url("../images/visual-09-m.png"); }
     section#Comparison .slider-comp { display:none; }
     section#Comparison .slider-comp-m { display:block; margin:0 auto; }
@@ -95,7 +104,7 @@ html { font-size: 22px; }
     section#Comparison .slick-next { right:1%; }
 
     section#Review h2 { padding-top:35px; }
-    section#Review iframe { max-width:100%; height:250px; margin-bottom:120px; }
+    section#Review iframe { max-width:100%; height:250px; margin-bottom:110px; }
     
     section#photo-wrap ul { width:100%; padding:0 5%; margin:20px 0 0 0; }
     section#photo-wrap ul li { width:calc(50% - 5px); margin:0 0 5px 0; }
@@ -104,10 +113,43 @@ html { font-size: 22px; }
     section#photo-wrap ul li img { width:100%; }
     
     section#Spec h2 { padding:60px 0 0 0; text-align:center; float:none; }
-    section#Spec #spec-table { width:100%; height:auto; margin:0; padding:0; background-size:100%; background-position:top center; background-repeat:no-repeat; }
-    section#Spec .visual-12 { position:static; }
-    section#Spec #spec-table table { width:90%; margin:90px 40px 90px 50px; font-size:0.7rem; }
+    section#Spec #spec-table { width:100%; height:auto; margin:0 0 50px 0; padding:0; background-size:100%; background-position:top center; background-repeat:no-repeat; }
+    section#Spec .visual-12 { position:static; margin-bottom:30px; }
+    section#Spec #spec-table table { width:90%; margin:80px 40px 90px 50px; font-size:0.7rem; }
     section#Spec #spec-table table tr th { padding:5px 4px 0 0; width:auto; }
+}
+
+@media (min-width:1023px) and (max-width:1299px) {
+    header { width:100%; text-align:center; padding:77px 0 44px 0; font-size:0; background-color:#fff; }
+    header p { font-size:1.09rem; padding:12px 0 18px 0; letter-spacing: 0.22rem; }
+    header .amazon-btn { position:absolute; top:60px; right:30px; }
+    header #nav-toggle { display:none; }
+
+    nav { width:100%; border-bottom:1px solid #999; border-top:1px solid #999; background-color:#fff; }
+    nav.sticky-header { position:fixed; top:-1px; z-index:9998; }
+    nav div ul { width:100%; }
+    nav div ul li { float:left; width:20%; text-align:center; font-size: 1.136rem; padding:26px 0; }
+    nav div .amazon-btn { position:absolute; top:64px; right:10px; z-index:9999; }
+    
+    section#Feature-03 { background-color:#e38484; }
+    section#Feature-03 div.decoration { padding:0 42px; }
+    section#Feature-03 div.decoration #desc-wrap { float:left; width:570px; }
+    section#Feature-03 div.decoration #desc-wrap #edit-p-02 { display:none; }
+    section#Feature-03 div.decoration h2 { line-height:4.9rem; color:#fff; padding-top:160px; margin-bottom:13px; font-weight:bold; }
+    section#Feature-03 div.decoration ul#icon-group { margin:37px 0 367px 0; }
+    section#Feature-03 div.decoration ul#icon-group li { float:left; color:#fff; font-size:0.9rem; text-align:center; margin-right:62px; }
+    section#Feature-03 div.decoration ul#icon-group li img { display:block; margin:0 auto; }
+    section#Feature-03 div.decoration .slider-wrap { width:606px; height:976px; position:absolute; z-index:1; top:-36px; right:0; background-image:url("../images/visual_07.png"); background-repeat:no-repeat; 
+        -webkit-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+        -moz-transform: rotate(10deg);
+        transform: rotate(10deg); }
+    section#Feature-03 div.decoration .slider-iphone { width:382px; height:679px; margin:134px 0 0 112px; color:#fff; }
+    section#Feature-03 div.decoration .visual-08 { top:-35px; right:340px; z-index:0; }
+    section#Feature-03 div.decoration .visual-14 { bottom:-60px; left:-135px; }
+    section#Feature-03 .store-btn { position:absolute; top:745px; left:42px; font-size:0; }
+    section#Feature-03 .store-btn a { margin-right:10px; }
 }
 
 @media (max-width:320px) {
