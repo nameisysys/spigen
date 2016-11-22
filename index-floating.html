@@ -3,14 +3,20 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=yes" />
     <title>PICKIT</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/slick.css" />
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webshim/1.15.10/dev/shims/matchMedia.js"></script><!--matchMedia script for IE9-->
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script type="text/javascript" src="js/common.js"></script>
+    <style>
+        .amazon-btn { display:none !important; }
+    </style>
 </head>
 
 <body>
@@ -19,6 +25,13 @@
         <div class="box-width">
             <h1><img src="images/logo.png" alt="Pickit">
             <p>Portable Photo printer</p></h1>
+            <div class="amazon-btn">
+                <a href=""><img src="images/amazone-btn.png" alt="Buy at Amazon"></a>
+            </div>
+            <div id="nav-toggle"><img src="images/nav.png" alt=""></div>
+            <div class="amazon-btn-floating-m">
+                <a href=""><img src="images/amazone-floating.png" alt="Buy at Amazon"></a>
+            </div>
         </div>
     </header>
     <!--// Header-->
@@ -32,7 +45,7 @@
                 <li><a href="#Review">Review</a></li>
                 <li><a href="#Spec">Spec</a></li>
             </ul>
-            <div class="amazon-btn">
+            <div class="amazon-btn-floating">
                 <a href=""><img src="images/amazone-floating.png" alt="Buy at Amazon"></a>
             </div>
         </div>
@@ -40,7 +53,7 @@
     <!--// gnb-->
     <section id="Pickit">
         <div class="box-width">
-            <h2>My own photo studio,pickit</h2>
+            <h2>My own photo studio, pickit</h2>
             <p class="h2-sub">Pickit portable photo printer helps users to print the most vividly colored photos
                 <br>from your smartphones in seconds.</p>
             <div class="box-video">
@@ -51,6 +64,9 @@
             </div>
             <div class="floating-images visual-02">
                 <img src="images/visual_02.png" alt="">
+            </div>
+            <div class="amazon-btn">
+                <a href=""><img src="images/amazone-btn.png" alt="Buy at Amazon"></a>
             </div>
         </div>
     </section>
@@ -67,18 +83,27 @@
             <div class="floating-images visual-03">
                 <img src="images/visual_03.png" alt="">
             </div>
-            <div class="floating-images visual-04">
-                <img src="images/visual_04.png" alt="">
-            </div>
             <div class="floating-images visual-05">
                 <img src="images/visual_05.png" alt="">
             </div>
+            <div class="amazon-btn">
+                <a href=""><img src="images/amazone-btn.png" alt="Buy at Amazon"></a>
+            </div>
         </div>
-        <div class="box-paris"></div>
+        <div class="box-paris">
+            <div id="paris-inner">
+                <div class="floating-images visual-04">
+                    <img src="images/visual_04.png" alt="">
+                </div>
+                <div class="amazon-btn">
+                    <a href=""><img src="images/amazone-btn.png" alt="Buy at Amazon"></a>
+                </div>
+            </div>
+        </div>
     </section>
     <section id="Feature-02">
         <div class="box-width easy">
-            <img src="images/visual_06.png" alt="" id="refill-image">
+            <img src="images/visual_06.png" alt="" id="refill-image-01">
             <h2>Easy to refill</h2>
             <h3>Pickit, It's easy</h3>
             <p class="h2-sub">
@@ -87,6 +112,7 @@
                 <br> Also, your photos become instant stickers when
                 <br> you use sticker cartridges.
             </p>
+            <img src="images/visual_06.png" alt="" id="refill-image-02">
             <div class="floating-images dot-01">
                 <img src="images/dot-01.png" alt="">
             </div>
@@ -98,6 +124,9 @@
             </div>
             <div class="floating-images visual-13">
                 <img src="images/visual_13.png" alt="">
+            </div>
+            <div class="amazon-btn">
+                <a href=""><img src="images/amazone-btn.png" alt="Buy at Amazon"></a>
             </div>
         </div>
     </section>
@@ -113,9 +142,13 @@
             <div id="desc-wrap">
                 <h2>Photo editing &amp;<br>decoration</h2>
                 <h3>Pickit app, It's fun</h3>
-                <p class="h2-sub">
-                    Make your own unique photos using filters, brushes,
-                    <br> stickers, frames, and backgrounds
+                <p class="h2-sub" id="edit-p-01">
+                    Make your own unique photos using filters,
+                    <br>brushes,stickers, frames, and backgrounds
+                </p>
+                <p class="h2-sub" id="edit-p-02">
+                    Make your own unique photos<Br>using filters,
+                    brushes,stickers, frames,<br>and backgrounds
                 </p>
                 <ul id="icon-group">
                     <li><img src="images/icon-01.png" alt="">Collage</li>
@@ -164,9 +197,36 @@
                         </p>
                     </div>
                 </div>
+                <div class="slider-comp-m">
+                    <div>
+                        <img src="images/comp-01-m.png" alt="">
+                        <h4>Photo Quality</h4>
+                        <p>
+                            Ink Free Technology (Dye Sublimation) has<br> much wider color reproduction range<br> 
+                            and makes photo quality more vivid, clear and sharp.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="images/comp-02-m.png" alt="">
+                        <h4>Durability</h4>
+                        <p>
+                            Laminating layer will keep your memories forever by waterproof and fingerprint proof.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="images/comp-03-m.png" alt="">
+                        <h4>Trasmission Speed</h4>
+                        <p>
+                            Faster and easier connection by NFC and WiFi
+                        </p>
+                    </div>
+                </div>
             </div>
             <div class="floating-images visual-15">
                 <img src="images/visual-15.jpg" alt="">
+            </div>
+            <div class="amazon-btn">
+                <a href=""><img src="images/amazone-btn.png" alt="Buy at Amazon"></a>
             </div>
         </div>
     </section>
@@ -176,6 +236,9 @@
             <iframe width="943" height="529" src="https://www.youtube.com/embed/lbAl9emSZhM" frameborder="0" allowfullscreen></iframe>
             <div class="floating-images visual-16">
                 <img src="images/visual-16.jpg" alt="">
+            </div>
+            <div class="amazon-btn">
+                <a href=""><img src="images/amazone-btn.png" alt="Buy at Amazon"></a>
             </div>
         </div>
     </section>
@@ -197,7 +260,9 @@
     </section>
     <section id="Spec">
         <div class="box-width">
+            <h2 id="spec-h2">Specification</h2>
             <div id="spec-table">
+                <h2 id="spec-h2-m">Specification</h2>
                 <table>
                     <tr>
                         <th>photo size</th>
@@ -239,15 +304,18 @@
                     </tr>
                 </table>
             </div>
-            <h2>Specification</h2>
             <div class="floating-images visual-12">
                 <img src="images/visual_12.png" alt="">
+            </div>
+            <div class="amazon-btn">
+                <a href=""><img src="images/amazone-btn.png" alt="Buy at Amazon"></a>
             </div>
         </div>
     </section>
     <footer>
         <div class="box-width">
-            Copyrightⓒ GoSelly All Rights Reserved. | For questions, please email us at amzmaster@goselly.com
+            <div>Copyrightⓒ GoSelly All Rights Reserved.</div>
+            <div>| For questions, please email us at amzmaster@goselly.com</div>
         </div>
     </footer>
 </body>
