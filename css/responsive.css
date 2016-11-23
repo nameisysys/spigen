@@ -19,16 +19,17 @@ html { font-size: 22px; }
     .visual-05, .visual-08, .visual-14, .visual-15, .visual-16, .dot-03 { display:none; }
     
     /*Amazon Button*/
+    div#section-wrap .amazon-btn-floating { display:none; }
     section#Pickit .amazon-btn { position:static; margin-bottom:60px; }
     section#Feature div > .amazon-btn { position:static; text-align:center; margin-top:10px; }
     section#Feature-02 .amazon-btn { position:static; margin-bottom:20px; }
     section#Comparison .amazon-btn { bottom:5%; }
     section#Review .amazon-btn { bottom:7%; }
     section#Spec .amazon-btn { position:static; text-align:center; top:auto; right:auto; }
-    header .amazon-btn-floating-m { position:absolute; bottom:-50px;  right:0; z-index:9999; display:block; }
+    header .amazon-btn-floating-m { position:absolute; right:-3px; z-index:9999; display:block; }
     header .amazon-btn-floating-m img,
     nav .amazon-btn-floating-m img { width:170px; }
-    nav .amazon-btn-floating-m { position:absolute; bottom:-55px; right:0; }
+    nav .amazon-btn-floating-m { position:absolute; bottom:-58px; right:-3px; display:block; }
     nav div.box-width { overflow:inherit; }
     
     header { padding:15px 5%; position:fixed; top:0; background-color:#fff; z-index:9999; }
@@ -44,7 +45,6 @@ html { font-size: 22px; }
     nav { width:100%; display:none; border-bottom:none; position:fixed; z-index:9999; }
     nav div ul { width:100%; }
     nav div ul li { width:100%; float:none; padding:15px 0; }
-    nav div .amazon-btn-floating { display:none; }
     
     section#Pickit h2 { padding:50px 5% 0 5%; margin-top:51px; }
     section#Pickit p.h2-sub { margin-bottom:30px; }
@@ -175,7 +175,9 @@ html { font-size: 22px; }
 
 @media (max-width:320px) {
     header .amazon-btn-floating-m { bottom:-60px; }
-    header .amazon-btn-floating-m img { width:140px; }
+    header .amazon-btn-floating-m img,
+    nav .amazon-btn-floating-m img { width:140px; }
+    nav .amazon-btn-floating-m { bottom:-49px; }
     section#Spec h2#spec-h2-m { padding-top:10px; }
     section#Spec #spec-table { padding-bottom:40px; letter-spacing:-1px; }
     html { font-size:15px; overflow-x:hidden; }

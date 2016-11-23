@@ -1,31 +1,34 @@
 $(document).ready(function () {
+    var headerH = $("header").outerHeight();
     if (matchMedia("(max-width:1023px)").matches) {
-        var headerH = $('header').outerHeight();
+        headerH = $("header").outerHeight();
         $("nav").css("top",headerH+"px");
-        console.log("ss");
+        $("header .amazon-btn-floating-m").css("top",(headerH+5)+"px");
     }
     $(window).resize(function() {
         if (matchMedia("(max-width:1023px)").matches) {
-            var headerH = $('header').outerHeight();
+            headerH = $('header').outerHeight();
             $("nav").css("top",headerH+"px");
+            $("header .amazon-btn-floating-m").css("top",(headerH+5)+"px");
         } else if (matchMedia("(min-width:1024px)").matches) {
             $("nav").show().css("top","-1px");
         }
     });
+    
     $(window).scroll(function () {
         if (matchMedia("(min-width:1024px)").matches) {
             var height = $(document).scrollTop();
-            var target = 238;
+            var targetHeader = 238;
 
-            if (height > target) {
+            if (height > targetHeader) {
                 $("nav").addClass("sticky-header");
-                $("#Pickit").css({
-                    paddingTop: "83px"
+                $("#section-wrap").css({
+                    marginTop: "83px"
                 });
-            } else if (height < target) {
+            } else if (height < targetHeader) {
                 $("nav").removeClass("sticky-header");
-                $("#Pickit").css({
-                    paddingTop: "0"
+                $("#section-wrap").css({
+                    marginTop: "0"
                 });
             }
         }
@@ -33,6 +36,7 @@ $(document).ready(function () {
 
     
     $("nav a").click(function () {
+        var headerHeight;
         if (matchMedia("(max-width:1023px)").matches) {
             headerHeight = 49;
         } else {

@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=yes" />
     <title>PICKIT</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" type="text/css" href="css/slick.css" />
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -13,9 +15,10 @@
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/webshim/1.15.10/dev/shims/matchMedia.js"></script><!--matchMedia script for IE9-->
     <script type="text/javascript" src="js/slick.min.js"></script>
-    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/common-floating.js"></script>
     <style>
-        .amazon-btn { display:none !important; }
+        .amazon-btn { visibility:hidden !important; }
     </style>
 </head>
 
@@ -26,12 +29,12 @@
             <h1><img src="images/logo.png" alt="Pickit">
             <p>Portable Photo printer</p></h1>
             <div class="amazon-btn">
-                <a href=""><img src="images/amazone-btn.png" alt="Buy at Amazon"></a>
+                <a href=""><img src="images/amazon-btn.png" alt="Buy at Amazon"></a>
             </div>
             <div id="nav-toggle"><img src="images/nav.png" alt=""></div>
         </div>
         <div class="amazon-btn-floating-m">
-            <a href=""><img src="images/amazone-floating.png" alt="Buy at Amazon"></a>
+            <a href=""><img src="images/amazon-floating.png" alt="Buy at Amazon"></a>
         </div>
     </header>
     <!--// Header-->
@@ -45,276 +48,278 @@
                 <li><a href="#Review">Review</a></li>
                 <li><a href="#Spec">Spec</a></li>
             </ul>
-            <div class="amazon-btn-floating">
-                <a href=""><img src="images/amazone-floating.png" alt="Buy at Amazon"></a>
-            </div>
             <div class="amazon-btn-floating-m">
-                <a href=""><img src="images/amazone-floating.png" alt="Buy at Amazon"></a>
+                <a href=""><img src="images/amazon-floating.png" alt="Buy at Amazon"></a>
             </div>
         </div>
     </nav>
     <!--// gnb-->
-    <section id="Pickit">
-        <div class="box-width">
-            <h2>My own photo studio, pickit</h2>
-            <p class="h2-sub">Pickit portable photo printer helps users to print the most vividly colored photos
-                <br>from your smartphones in seconds.</p>
-            <div class="box-video">
-                <iframe width="910" height="512" src="https://www.youtube.com/embed/tpl1uAoZZCw" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <div class="floating-images visual-01">
-                <img src="images/visual_01.png" alt="">
-            </div>
-            <div class="floating-images visual-02">
-                <img src="images/visual_02.png" alt="">
-            </div>
-            <div class="amazon-btn">
-                <a href=""><img src="images/amazone-btn.png" alt="Buy at Amazon"></a>
-            </div>
+    <div id="section-wrap">
+        <div class="amazon-btn-floating">
+            <a href=""><img src="images/amazon-floating.png" alt="Buy at Amazon"></a>
         </div>
-    </section>
-    <section id="Feature">
-        <div class="box-width">
-            <h2>Clear &amp; Brilliant color</h2>
-            <h3>Pickit, It's real</h3>
-            <p class="h2-sub">
-                Pickit mobile printer guarantees
-                <br> the best photo printing quality of ink free technology.
-                <br> Brighter and richer color reproduction
-                <br> brings great visual experiences.
-            </p>
-            <div class="floating-images visual-03">
-                <img src="images/visual_03.png" alt="">
-            </div>
-            <div class="floating-images visual-05">
-                <img src="images/visual_05.png" alt="">
-            </div>
-            <div class="amazon-btn">
-                <a href=""><img src="images/amazone-btn.png" alt="Buy at Amazon"></a>
-            </div>
-        </div>
-        <div class="box-paris">
-            <div id="paris-inner">
-                <div class="floating-images visual-04">
-                    <img src="images/visual_04.png" alt="">
+        <section id="Pickit">
+            <div class="box-width">
+                <h2>My own photo studio, pickit</h2>
+                <p class="h2-sub">Pickit portable photo printer helps users to print the most vividly colored photos
+                    <br>from your smartphones in seconds.</p>
+                <div class="box-video">
+                    <iframe width="910" height="512" src="https://www.youtube.com/embed/tpl1uAoZZCw" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="floating-images visual-01">
+                    <img src="images/visual_01.png" alt="">
+                </div>
+                <div class="floating-images visual-02">
+                    <img src="images/visual_02.png" alt="">
                 </div>
                 <div class="amazon-btn">
-                    <a href=""><img src="images/amazone-btn.png" alt="Buy at Amazon"></a>
+                    <a href=""><img src="images/amazon-btn.png" alt="Buy at Amazon"></a>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="Feature-02">
-        <div class="box-width easy">
-            <img src="images/visual_06.png" alt="" id="refill-image-01">
-            <h2>Easy to refill</h2>
-            <h3>Pickit, It's easy</h3>
-            <p class="h2-sub">
-                Integrated all-in-one cartridge makes you free
-                <br> from worries to replace photo paper and ink ribbon.
-                <br> Also, your photos become instant stickers when
-                <br> you use sticker cartridges.
-            </p>
-            <img src="images/visual_06.png" alt="" id="refill-image-02">
-            <div class="floating-images dot-01">
-                <img src="images/dot-01.png" alt="">
-            </div>
-            <div class="floating-images dot-02">
-                <img src="images/dot-02.png" alt="">
-            </div>
-            <div class="floating-images dot-03">
-                <img src="images/dot-03.png" alt="">
-            </div>
-            <div class="floating-images visual-13">
-                <img src="images/visual_13.png" alt="">
-            </div>
-            <div class="amazon-btn">
-                <a href=""><img src="images/amazone-btn.png" alt="Buy at Amazon"></a>
-            </div>
-        </div>
-    </section>
-    <section id="Feature-03">
-        <div class="box-width decoration">
-            <div class="slider-wrap">
-                <div class="slider-iphone">
-                    <div><img src="images/iphone-01.jpg" alt=""></div>
-                    <div><img src="images/iphone-02.jpg" alt=""></div>
-                    <div><img src="images/iphone-03.jpg" alt=""></div>
+        </section>
+        <section id="Feature">
+            <div class="box-width">
+                <h2>Clear &amp; Brilliant color</h2>
+                <h3>Pickit, It's real</h3>
+                <p class="h2-sub">
+                    Pickit mobile printer guarantees
+                    <br> the best photo printing quality of ink free technology.
+                    <br> Brighter and richer color reproduction
+                    <br> brings great visual experiences.
+                </p>
+                <div class="floating-images visual-03">
+                    <img src="images/visual_03.png" alt="">
+                </div>
+                <div class="floating-images visual-05">
+                    <img src="images/visual_05.png" alt="">
+                </div>
+                <div class="amazon-btn">
+                    <a href=""><img src="images/amazon-btn.png" alt="Buy at Amazon"></a>
                 </div>
             </div>
-            <div id="desc-wrap">
-                <h2>Photo editing &amp;<br>decoration</h2>
-                <h3>Pickit app, It's fun</h3>
-                <p class="h2-sub" id="edit-p-01">
-                    Make your own unique photos using filters,
-                    <br>brushes,stickers, frames, and backgrounds
+            <div class="box-paris">
+                <div id="paris-inner">
+                    <div class="floating-images visual-04">
+                        <img src="images/visual_04.png" alt="">
+                    </div>
+                    <div class="amazon-btn">
+                        <a href=""><img src="images/amazon-btn.png" alt="Buy at Amazon"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Feature-02">
+            <div class="box-width easy">
+                <img src="images/visual_06.png" alt="" id="refill-image-01">
+                <h2>Easy to refill</h2>
+                <h3>Pickit, It's easy</h3>
+                <p class="h2-sub">
+                    Integrated all-in-one cartridge makes you free
+                    <br> from worries to replace photo paper and ink ribbon.
+                    <br> Also, your photos become instant stickers when
+                    <br> you use sticker cartridges.
                 </p>
-                <p class="h2-sub" id="edit-p-02">
-                    Make your own unique photos<Br>using filters,
-                    brushes,stickers, frames,<br>and backgrounds
-                </p>
-                <ul id="icon-group">
-                    <li><img src="images/icon-01.png" alt="">Collage</li>
-                    <li><img src="images/icon-02.png" alt="">Fillter</li>
-                    <li><img src="images/icon-03.png" alt="">Adjust</li>
-                    <li><img src="images/icon-04.png" alt="">Decoration</li>
+                <img src="images/visual_06.png" alt="" id="refill-image-02">
+                <div class="floating-images dot-01">
+                    <img src="images/dot-01.png" alt="">
+                </div>
+                <div class="floating-images dot-02">
+                    <img src="images/dot-02.png" alt="">
+                </div>
+                <div class="floating-images dot-03">
+                    <img src="images/dot-03.png" alt="">
+                </div>
+                <div class="floating-images visual-13">
+                    <img src="images/visual_13.png" alt="">
+                </div>
+                <div class="amazon-btn">
+                    <a href=""><img src="images/amazon-btn.png" alt="Buy at Amazon"></a>
+                </div>
+            </div>
+        </section>
+        <section id="Feature-03">
+            <div class="box-width decoration">
+                <div class="slider-wrap">
+                    <div class="slider-iphone">
+                        <div><img src="images/iphone-01.jpg" alt=""></div>
+                        <div><img src="images/iphone-02.jpg" alt=""></div>
+                        <div><img src="images/iphone-03.jpg" alt=""></div>
+                    </div>
+                </div>
+                <div id="desc-wrap">
+                    <h2>Photo editing &amp;<br>decoration</h2>
+                    <h3>Pickit app, It's fun</h3>
+                    <p class="h2-sub" id="edit-p-01">
+                        Make your own unique photos using filters,
+                        <br>brushes,stickers, frames, and backgrounds
+                    </p>
+                    <p class="h2-sub" id="edit-p-02">
+                        Make your own unique photos<Br>using filters,
+                        brushes,stickers, frames,<br>and backgrounds
+                    </p>
+                    <ul id="icon-group">
+                        <li><img src="images/icon-01.png" alt="">Collage</li>
+                        <li><img src="images/icon-02.png" alt="">Fillter</li>
+                        <li><img src="images/icon-03.png" alt="">Adjust</li>
+                        <li><img src="images/icon-04.png" alt="">Decoration</li>
+                    </ul>
+                </div>
+                <div class="floating-images visual-08">
+                    <img src="images/visual_08.png" alt="">
+                </div>
+                <div class="floating-images visual-14">
+                    <img src="images/visual-14.png" alt="">
+                </div>
+                <div class="store-btn">
+                    <a href=""><img src="images/android-btn.png" alt="Google play"></a>
+                    <a href=""><img src="images/ios-btn.png" alt="App store"></a>
+                </div>
+            </div>
+        </section>
+        <section id="Comparison">
+            <div class="box-width">
+                <h2>Why must have pickit?</h2>
+                <div class="slider-wrap">
+                    <div class="slider-comp">
+                        <div>
+                            <img src="images/comp-01.png" alt="">
+                            <h4>Photo Quality</h4>
+                            <p>
+                                Ink Free Technology (Dye Sublimation) has much wider color reproduction range
+                                <br> and makes photo quality more vivid, clear and sharp.
+                            </p>
+                        </div>
+                        <div>
+                            <img src="images/comp-02.png" alt="">
+                            <h4>Durability</h4>
+                            <p>
+                                Laminating layer will keep your memories forever by waterproof and fingerprint proof.
+                            </p>
+                        </div>
+                        <div>
+                            <img src="images/comp-03.png" alt="">
+                            <h4>Transmission Speed</h4>
+                            <p>
+                                Faster and easier connection by NFC and WiFi
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slider-comp-m">
+                        <div>
+                            <img src="images/comp-01-m.png" alt="">
+                            <h4>Photo Quality</h4>
+                            <p>
+                                Ink Free Technology (Dye Sublimation) has<br> much wider color reproduction range<br> 
+                                and makes photo quality more vivid, clear and sharp.
+                            </p>
+                        </div>
+                        <div>
+                            <img src="images/comp-02-m.png" alt="">
+                            <h4>Durability</h4>
+                            <p>
+                                Laminating layer will keep your memories forever by waterproof and fingerprint proof.
+                            </p>
+                        </div>
+                        <div>
+                            <img src="images/comp-03-m.png" alt="">
+                            <h4>Trasmission Speed</h4>
+                            <p>
+                                Faster and easier connection by NFC and WiFi
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="floating-images visual-15">
+                    <img src="images/visual-15.jpg" alt="">
+                </div>
+                <div class="amazon-btn">
+                    <a href=""><img src="images/amazon-btn.png" alt="Buy at Amazon"></a>
+                </div>
+            </div>
+        </section>
+        <section id="Review">
+            <div class="box-width">
+                <h2>Customer review</h2>
+                <iframe width="943" height="529" src="https://www.youtube.com/embed/lbAl9emSZhM" frameborder="0" allowfullscreen></iframe>
+                <div class="floating-images visual-16">
+                    <img src="images/visual-16.jpg" alt="">
+                </div>
+                <div class="amazon-btn">
+                    <a href=""><img src="images/amazon-btn.png" alt="Buy at Amazon"></a>
+                </div>
+            </div>
+        </section>
+        <section id="Review-02">
+            <div class="box-width">
+                <div class="fb-comments" data-href="http://www.spigen.co.kr/" data-numposts="5" data-width="943"></div>
+            </div>
+        </section>
+        <section id="photo-wrap">
+            <div class="box-width">
+                <ul>
+                    <li><img src="images/visual_10_1.jpg" alt=""></li>
+                    <li><img src="images/visual_10_2.jpg" alt=""></li>
+                    <li><img src="images/visual_10_3.jpg" alt=""></li>
+                    <li><img src="images/visual_10_4.jpg" alt=""></li>
+                    <li><img src="images/visual_10_5.jpg" alt=""></li>
                 </ul>
             </div>
-            <div class="floating-images visual-08">
-                <img src="images/visual_08.png" alt="">
-            </div>
-            <div class="floating-images visual-14">
-                <img src="images/visual-14.png" alt="">
-            </div>
-            <div class="store-btn">
-                <a href=""><img src="images/android-btn.png" alt="Google play"></a>
-                <a href=""><img src="images/ios-btn.png" alt="App store"></a>
-            </div>
-        </div>
-    </section>
-    <section id="Comparison">
-        <div class="box-width">
-            <h2>Why must have pickit?</h2>
-            <div class="slider-wrap">
-                <div class="slider-comp">
-                    <div>
-                        <img src="images/comp-01.png" alt="">
-                        <h4>Photo Quality</h4>
-                        <p>
-                            Ink Free Technology (Dye Sublimation) has much wider color reproduction range
-                            <br> and makes photo quality more vivid, clear and sharp.
-                        </p>
-                    </div>
-                    <div>
-                        <img src="images/comp-02.png" alt="">
-                        <h4>Durability</h4>
-                        <p>
-                            Laminating layer will keep your memories forever by waterproof and fingerprint proof.
-                        </p>
-                    </div>
-                    <div>
-                        <img src="images/comp-03.png" alt="">
-                        <h4>Transmission Speed</h4>
-                        <p>
-                            Faster and easier connection by NFC and WiFi
-                        </p>
-                    </div>
+        </section>
+        <section id="Spec">
+            <div class="box-width">
+                <h2 id="spec-h2">Specification</h2>
+                <div id="spec-table">
+                    <h2 id="spec-h2-m">Specification</h2>
+                    <table>
+                        <tr>
+                            <th>photo size</th>
+                            <td>2.1” X 3.4” inch</td>
+                        </tr>
+                        <tr>
+                            <th>Smartphone OS</th>
+                            <td>Android ver. 4.0 or above
+                                <br>iOS ver 5.0 above</td>
+                        </tr>
+                        <tr>
+                            <th>Refill Kit Capacity</th>
+                            <td>10 photos / Refill Kit</td>
+                        </tr>
+                        <tr>
+                            <th>Time to Charge</th>
+                            <td>1.5 Hour</td>
+                        </tr>
+                        <tr>
+                            <th>Connectivity</th>
+                            <td>WiFi (IEEE 802.111 b/g/n) &amp; WiFi Direct</td>
+                        </tr>
+                        <tr>
+                            <th>Battery Capacity</th>
+                            <td>620mAh (Print 20 photos of test image)</td>
+                        </tr>
+                        <tr>
+                            <th>Size</th>
+                            <td>7.2 x 4 x 2.2 inches</td>
+                        </tr>
+                        <tr>
+                            <th>Weight</th>
+                            <td>8.8 ounces</td>
+                        </tr>
+                        <tr>
+                            <th>Components</th>
+                            <td>1 Pickit Photo Printer, 1 USB Charge Cable1
+                                <br> Refill Kit (8 sheet)</td>
+                        </tr>
+                    </table>
                 </div>
-                <div class="slider-comp-m">
-                    <div>
-                        <img src="images/comp-01-m.png" alt="">
-                        <h4>Photo Quality</h4>
-                        <p>
-                            Ink Free Technology (Dye Sublimation) has<br> much wider color reproduction range<br> 
-                            and makes photo quality more vivid, clear and sharp.
-                        </p>
-                    </div>
-                    <div>
-                        <img src="images/comp-02-m.png" alt="">
-                        <h4>Durability</h4>
-                        <p>
-                            Laminating layer will keep your memories forever by waterproof and fingerprint proof.
-                        </p>
-                    </div>
-                    <div>
-                        <img src="images/comp-03-m.png" alt="">
-                        <h4>Trasmission Speed</h4>
-                        <p>
-                            Faster and easier connection by NFC and WiFi
-                        </p>
-                    </div>
+                <div class="floating-images visual-12">
+                    <img src="images/visual_12.png" alt="">
+                </div>
+                <div class="amazon-btn">
+                    <a href=""><img src="images/amazon-btn.png" alt="Buy at Amazon"></a>
                 </div>
             </div>
-            <div class="floating-images visual-15">
-                <img src="images/visual-15.jpg" alt="">
-            </div>
-            <div class="amazon-btn">
-                <a href=""><img src="images/amazone-btn.png" alt="Buy at Amazon"></a>
-            </div>
-        </div>
-    </section>
-    <section id="Review">
-        <div class="box-width">
-            <h2>Customer review</h2>
-            <iframe width="943" height="529" src="https://www.youtube.com/embed/lbAl9emSZhM" frameborder="0" allowfullscreen></iframe>
-            <div class="floating-images visual-16">
-                <img src="images/visual-16.jpg" alt="">
-            </div>
-            <div class="amazon-btn">
-                <a href=""><img src="images/amazone-btn.png" alt="Buy at Amazon"></a>
-            </div>
-        </div>
-    </section>
-    <section id="Review-02">
-        <div class="box-width">
-            <div class="fb-comments" data-href="https://nameisysys.github.io/" data-numposts="5" data-width="943"></div>
-        </div>
-    </section>
-    <section id="photo-wrap">
-        <div class="box-width">
-            <ul>
-                <li><img src="images/visual_10_1.jpg" alt=""></li>
-                <li><img src="images/visual_10_2.jpg" alt=""></li>
-                <li><img src="images/visual_10_3.jpg" alt=""></li>
-                <li><img src="images/visual_10_4.jpg" alt=""></li>
-                <li><img src="images/visual_10_5.jpg" alt=""></li>
-            </ul>
-        </div>
-    </section>
-    <section id="Spec">
-        <div class="box-width">
-            <h2 id="spec-h2">Specification</h2>
-            <div id="spec-table">
-                <h2 id="spec-h2-m">Specification</h2>
-                <table>
-                    <tr>
-                        <th>photo size</th>
-                        <td>2.1” X 3.4” inch</td>
-                    </tr>
-                    <tr>
-                        <th>Smartphone OS</th>
-                        <td>Android ver. 4.0 or above
-                            <br>iOS ver 5.0 above</td>
-                    </tr>
-                    <tr>
-                        <th>Refill Kit Capacity</th>
-                        <td>10 photos / Refill Kit</td>
-                    </tr>
-                    <tr>
-                        <th>Time to Charge</th>
-                        <td>1.5 Hour</td>
-                    </tr>
-                    <tr>
-                        <th>Connectivity</th>
-                        <td>WiFi (IEEE 802.111 b/g/n) &amp; WiFi Direct</td>
-                    </tr>
-                    <tr>
-                        <th>Battery Capacity</th>
-                        <td>620mAh (Print 20 photos of test image)</td>
-                    </tr>
-                    <tr>
-                        <th>Size</th>
-                        <td>7.2 x 4 x 2.2 inches</td>
-                    </tr>
-                    <tr>
-                        <th>Weight</th>
-                        <td>8.8 ounces</td>
-                    </tr>
-                    <tr>
-                        <th>Components</th>
-                        <td>1 Pickit Photo Printer, 1 USB Charge Cable1
-                            <br> Refill Kit (8 sheet)</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="floating-images visual-12">
-                <img src="images/visual_12.png" alt="">
-            </div>
-            <div class="amazon-btn">
-                <a href=""><img src="images/amazone-btn.png" alt="Buy at Amazon"></a>
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
     <footer>
         <div class="box-width">
             <div>Copyrightⓒ GoSelly All Rights Reserved.</div>
