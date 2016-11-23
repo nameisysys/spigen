@@ -51,7 +51,7 @@ html { font-size: 22px; }
     section#Pickit div.visual-01 { width:40%; top:18%; right:-20%; }
     section#Pickit div.box-video { max-width:100%; width:100%; padding-bottom:20px; }
     section#Pickit div.box-video iframe { width:100%; height:250px; }
-    section#Pickit div.visual-02 { width:40%; bottom:-2%; left:-15%; }
+    section#Pickit div.visual-02 { width:40%; bottom:-2%; left:-17%; }
     
     section#Feature h2 { font-size:3.5rem; padding-top:40px; }
     section#Feature div.box-width { text-align:center; padding:0; overflow:inherit; }
