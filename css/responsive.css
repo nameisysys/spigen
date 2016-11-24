@@ -21,7 +21,7 @@ html { font-size: 22px; }
     /*Amazon Button*/
     div#section-wrap .amazon-btn-floating { display:none; }
     section#Pickit .amazon-btn { position:static; margin-bottom:60px; }
-    section#Feature div > .amazon-btn { position:static; text-align:center; margin-top:10px; }
+    section#Feature div > .amazon-btn { position:relative; text-align:center; margin-top:10px; top:inherit; z-index:9; }
     section#Feature-02 .amazon-btn { position:static; margin-bottom:20px; }
     section#Comparison .amazon-btn { position:static; margin-bottom:40px; }
     section#Review .amazon-btn { bottom:7%; }
