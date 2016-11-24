@@ -94,7 +94,7 @@ section#Feature-03 div.decoration .slider-iphone { width:382px; height:679px; ma
 section#Feature-03 div.decoration .visual-08 { top:-35px; right:340px; z-index:0; }
 section#Feature-03 div.decoration .visual-14 { bottom:-60px; left:-135px; }
 section#Feature-03 .store-btn { position:absolute; top:745px; left:42px; font-size:0; }
-section#Feature-03 .store-btn a { margin-right:10px; }
+section#Feature-03 .store-btn img { margin-right:10px; }
 
 section#Comparison { text-align:center; }
 section#Comparison div.box-width { padding-bottom:116px; }
