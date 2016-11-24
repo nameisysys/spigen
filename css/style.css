@@ -126,9 +126,9 @@ section#photo-wrap ul li { float:left; margin:0 10px; }
 
 section#Spec h2#spec-h2 { float:left; color:#555; padding:88px 0 0 55px; }
 section#Spec h2#spec-h2-m { display:none; }
-section#Spec #spec-table { width:678px; height:648px; background-image:url("../images/visual_11.png"); float:right; margin:51px -67px 390px; 0; padding:150px 0 0 100px; }
+section#Spec #spec-table { width:678px; height:648px; background-image:url("../images/visual_11.png"); float:right; margin:51px -67px 390px; 0; padding:140px 0 0 100px; }
 section#Spec #spec-table table { font-size:0.863rem; color:#666; letter-spacing:-0.045rem; }
-section#Spec #spec-table table tr th { color:#292828; padding:10px 0; text-align:left; width:150px; }
+section#Spec #spec-table table tr th { color:#292828; padding:10px 0; text-align:left; width:155px; }
 section#Spec .visual-12 { top:222px; left:0; }
 section#Spec .amazon-btn { position:absolute; top:710px; right:25px; }
 

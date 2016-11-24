@@ -123,7 +123,7 @@ html { font-size: 22px; }
     section#Spec h2#spec-h2-m { display:block; padding:45px 0 0 0; text-align:center; float:none; color:#555; }
     section#Spec #spec-table { width:100%; height:auto; margin:50px 0 0 0; padding:0; background-size:100% 100%; background-position:top center; background-repeat:no-repeat; }
     section#Spec .visual-12 { position:static; margin-bottom:30px; }
-    section#Spec #spec-table table { width:90%; margin:0 40px 90px 50px; font-size:0.7rem; }
+    section#Spec #spec-table table { width:86%; margin:0 40px 90px 40px; font-size:0.7rem; }
     section#Spec #spec-table table tr th { padding:5px 4px 0 0; width:auto; }
     
     footer { padding:40px 0; }
@@ -184,5 +184,5 @@ html { font-size: 22px; }
     section#Spec #spec-table { padding-bottom:40px; letter-spacing:-1px; }
     html { font-size:15px; overflow-x:hidden; }
     section#Feature-03 div.decoration .slider-wrap { right:-80px; }
-    section#Spec #spec-table table { width:90%; margin:0 30px; font-size:0.7rem; }
+    section#Spec #spec-table table { width:80%; margin:0 40px; font-size:0.7rem; }
 }
