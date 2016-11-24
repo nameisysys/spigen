@@ -117,7 +117,8 @@ section#Review .visual-16 { bottom:68px; left:-185px; }
 section#Review .amazon-btn { position:absolute; width:100%; text-align:center; bottom:50px; }
 
 section#Review-02 .box-width { text-align:center; }
-section#Review-02 .fb-comments { padding:50px 0; }
+section#Review-02 .fb-like { padding:50px 0 30px 0; }
+section#Review-02 .fb-comments { padding-bottom:50px; }
 
 section#photo-wrap { text-align:center; width:100%; }
 section#photo-wrap ul { width:3100px; margin-left:-68%; font-size:0; }

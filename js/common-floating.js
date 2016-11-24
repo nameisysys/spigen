@@ -119,7 +119,7 @@ window.fbAsyncInit = function () {
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 
-//Facebook Script Loader + Page Tracking
+//Facebook Script Loader
 ! function (f, b, e, v, n, t, s) {
     if (f.fbq) return;
     n = f.fbq = function () {
@@ -150,6 +150,7 @@ function track(_pid, _aid, _eid) {
     });
 }
 
+//Page Tracking
 function trk(_pid, _eid) {
     return track(_pid, 'B01DU55KX8', _eid);
 }
