@@ -110,7 +110,8 @@ html { font-size: 22px; }
 
     section#Review h2 { padding-top:35px; }
     section#Review iframe { max-width:100%; height:250px; margin-bottom:110px; }
-    section#Review-02 .fb-like { padding:50px 2% 30px 2%; }
+    section#Review-02 div.box-width { margin:30px 0 10px 0; }
+    section#Review-02 .fb-like { padding:0 2%; }
     
     section#photo-wrap ul { width:100%; padding:0 5%; margin:20px 0 0 0; }
     section#photo-wrap ul li { width:calc(50% - 5px); margin:0 0 5px 0; }
