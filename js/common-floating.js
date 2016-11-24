@@ -100,7 +100,7 @@ $(document).ready(function () {
     });
 });
 
-//Facebook Comment
+//Facebook Comment & Like
 window.fbAsyncInit = function () {
     FB.init({
         appId: '607233349484734',
@@ -142,17 +142,16 @@ window.fbAsyncInit = function () {
 fbq('init', '1046344992096861');
 fbq('track', 'PageView');
 
+//Page Tracking
+function trk(_pid, _eid) {
+    return track(_pid, 'B01DU55KX8', _eid);
+}
 function track(_pid, _aid, _eid) {
     fbq('trackCustom', 'amz', {
         pid: _pid, // page id
         aid: _aid, // (optional) asin
         eid: _eid // event id
     });
-}
-
-//Page Tracking
-function trk(_pid, _eid) {
-    return track(_pid, 'B01DU55KX8', _eid);
 }
 
 //GA

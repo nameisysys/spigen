@@ -81,7 +81,7 @@ $(document).ready(function () {
     });
 });
 
-//Facebook Comment
+//Facebook Comment & Like
 window.fbAsyncInit = function () {
     FB.init({
         appId: '607233349484734',
@@ -100,7 +100,7 @@ window.fbAsyncInit = function () {
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 
-//Facebook Script Loader + Page Tracking
+//Facebook Script Loader
 ! function (f, b, e, v, n, t, s) {
     if (f.fbq) return;
     n = f.fbq = function () {
@@ -123,6 +123,7 @@ window.fbAsyncInit = function () {
 fbq('init', '1046344992096861');
 fbq('track', 'PageView');
 
+//Page Tracking
 function track(_pid, _aid, _eid) {
     fbq('trackCustom', 'amz', {
         pid: _pid, // page id
@@ -130,7 +131,6 @@ function track(_pid, _aid, _eid) {
         eid: _eid // event id
     });
 }
-
 function trk(_pid, _eid) {
     return track(_pid, 'B01DU55KX8', _eid);
 }
