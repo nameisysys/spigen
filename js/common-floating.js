@@ -27,12 +27,12 @@ $(document).ready(function () {
 
             if (height > targetHeader) {
                 $("nav").addClass("sticky-header");
-                $("#section-wrap").css({
+                $(".xmas-pc").css({
                     marginTop: "83px"
                 });
             } else if (height < targetHeader) {
                 $("nav").removeClass("sticky-header");
-                $("#section-wrap").css({
+                $(".xmas-pc").css({
                     marginTop: "0"
                 });
             }

@@ -46,7 +46,8 @@ html { font-size: 22px; }
     nav div ul { width:100%; }
     nav div ul li { width:100%; float:none; padding:15px 0; }
     
-    section#Pickit h2 { padding:50px 5% 0 5%; margin-top:51px; }
+    
+    section#Pickit h2 { padding:50px 5% 0 5%; /*margin-top:51px;*/ }
     section#Pickit p.h2-sub { margin-bottom:30px; }
     section#Pickit div.visual-01 { width:40%; top:18%; right:-20%; }
     section#Pickit div.box-video { max-width:100%; width:100%; padding-bottom:20px; }
@@ -129,8 +130,26 @@ html { font-size: 22px; }
     footer { padding:40px 0; }
 }
 
+@media (max-width:853px) {
+    section.xmas-pc { display:none; }
+    section.xmas-mobile { display:block; margin-top:50px; }
+    section.xmas-banner { background:#0f7d52 url("../images/pickit_xmas_mobile.jpg") no-repeat; background-size:auto 100%; background-position:top right; padding:17px 4%; }
+    section.xmas-banner div.box-width { height:auto; }
+    section.xmas-banner div.amazon-btn { width:auto; }
+    section.xmas-banner div.amazon-btn img { width:80px; }
+    section.xmas-banner h3 { font-size:1rem; margin-bottom:5px; }
+    section.xmas-banner p.h2-sub { font-size:0.5rem; margin:0; line-height:0.6rem; }
+}
+@media (min-width:598px) and (max-width:1023px) {
+    section.xmas-pc { display:block; }
+    section.xmas-mobile { display:none; }
+    section.xmas-banner { margin-top:71px; background-position:top right }
+    section.xmas-banner h2 { padding-top:0; }
+}
+
 @media (min-width:667px) and (max-width:1023px) {
     html { font-size:20px; }
+    
     section#Review div.box-video iframe,
     section#Pickit div.box-video iframe { height:350px; }
     section#Feature div.visual-04 { right:-410px; top:-290px; }
@@ -179,6 +198,7 @@ html { font-size: 22px; }
     header .amazon-btn-floating-m img,
     nav .amazon-btn-floating-m img { width:140px; }
     nav .amazon-btn-floating-m { bottom:-55px; right:-4px; }
+    section.xmas-banner { background-position:22% 0; }
     section#Comparison .slider-wrap { margin-bottom:10px; }
     section#Spec h2#spec-h2-m { padding-top:10px; }
     section#Spec #spec-table { padding-bottom:40px; letter-spacing:-1px; }

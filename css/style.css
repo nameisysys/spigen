@@ -47,6 +47,16 @@ nav div ul li { float:left; width:20%; text-align:center; font-size: 1.136rem; p
 nav div .amazon-btn-floating { position:absolute; top:64px; right:10px; z-index:9999; }
 nav .amazon-btn-floating-m { display:none; }
 
+section.xmas-mobile { display:none; }
+section.xmas-banner { background:#0f7d52 url('../images/pickit_xmas_pc.jpg') center no-repeat; width:100%; text-align:center; font-size:0; }
+section.xmas-banner div.box-width { max-width:835px; text-align:left; height:270px; }
+section.xmas-banner h2 { font-size:3.318rem; color:#06573a; font-weight:bold; padding-top:40px; }
+section.xmas-banner h3 { font-size:1.27rem; color:#fff; margin-bottom:13px; }
+section.xmas-banner .amazon-btn { float:left; }
+section.xmas-banner p.h2-sub { font-size:0.81rem; color:#000; float:left; font-weight:400; line-height:1rem; margin-top:5px; }
+section.xmas-banner p.h2-sub span { font-weight:bold; color:#000; }
+section.xmas-banner .amazon-btn { margin:0 9px 0 -3px; }
+
 section#Pickit { text-align:center; background-color:#f5f5f5; }
 section#Pickit h2 { padding-top:98px; font-weight:bold; }
 section#Pickit p.h2-sub { margin-bottom:70px; }
