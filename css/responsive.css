@@ -140,11 +140,27 @@ html { font-size: 22px; }
     section.xmas-banner h3 { font-size:1rem; margin-bottom:5px; }
     section.xmas-banner p.h2-sub { font-size:0.5rem; margin:0; line-height:0.6rem; }
 }
-@media (min-width:598px) and (max-width:1023px) {
+
+
+@media (min-width:480px) and (max-width:1023px) {
     section.xmas-pc { display:block; }
     section.xmas-mobile { display:none; }
     section.xmas-banner { margin-top:71px; background-position:top right }
-    section.xmas-banner h2 { padding-top:0; }
+    section.xmas-banner h2 { padding-top:0; font-size:2.8rem; }
+}
+
+@media (min-width:853px) and (max-width:1023px) {
+    section.xmas-banner div.box-width { padding:0 20px; }
+    section.xmas-banner h2 { margin-top:50px; }
+    section.xmas-banner div.amazon-btn { width:auto; }
+    section.xmas-banner div.amazon-btn img { width:200px; }
+    section.xmas-banner { background-position:84% 0; }
+    section.xmas-banner p.h2-sub { line-height:1.3rem; }
+    
+}
+
+@media (min-width:480px) and (max-width:565px) {
+    section.xmas-banner { background-position:22% 0; }
 }
 
 @media (min-width:667px) and (max-width:1023px) {
@@ -191,7 +207,9 @@ html { font-size: 22px; }
     section#Spec .amazon-btn { width:100%; text-align:center; top:875px; }
     section#Feature-02 .amazon-btn { top:inherit; bottom:50px; right:140px; }
 }
-
+@media (max-width:360px) {
+    section.xmas-banner { background-position:-22% 0; }
+}
 
 @media (max-width:320px) {
     header .amazon-btn-floating-m { bottom:-60px; right:-4px; }
